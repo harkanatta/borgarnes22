@@ -14,7 +14,7 @@ lang: is
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["kunoichi", "ninjutsu" , "assets/ninpo.css"]
+    css: ["kunoichiB", "ninjutsuB" , "assets/ninpo.css"]
     self_contained: false
     nature:
       ratio: "16:9"
@@ -41,7 +41,7 @@ class: split-two with-thick-border border-cyan
 
 .column.bg-main1[.content.center.vmiddle[
 # Microplastic Sampling
-# .orange[Skagaströnd] 
+# .deep-orange[Skagaströnd] 
 ## .white[<span class=" faa-pulse animated-hover " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"> [skʰaːɣastrœn̥d] </span>]
 <br><br>
 
@@ -54,10 +54,187 @@ mynd
 
 ???
 Takið eftir kaðlinum
+
 ---
+
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
+
+layout: true
+class: split-two with-border border-white
+
+.column.bg-main3[.content[
+  .split-five[
+ .row.bg-main1[.content.center.vmiddle[
+.font-dance.font3[Plastic is everywhere]
+ ]]
+  .row.bg-main2[.content.center[ It is made with <br>
+.font-perm.font3[<span class=" faa-pulse animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"> Chemistry!!]
+ ]]
+  .row.bg-main4[.content[
+```{r wlogo, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '5%'}
+mynd <- knitr::include_graphics("images/wikilogo.png")
+mynd
+```
+.font-mono[The International Resin Identification Coding System (RIC) is a set of symbols that identify the plastic resin out of which products are made]
+ ]]
+  .row.bg-main2[.content[
+### Tölur um losun frá þvotti á fatnaði úr gerviefnum eru komnar til ára sinna og því nauðsynlegt að uppfæra þær.
+ ]]
+   .row.bg-main1[.content[
+### Örplast frá snyrtivörum er aðallega vegna handsápu af verkstæðum. 
+ ]]
+ ]
+]]
+
+.column.bg-white[.content.center.vmiddle[
+{{content}}
+]]
+
+???
+Define the layout and for sequence hide the appropriate cell.
+
+---
+
+class: hide-row2-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
+
+```{r stortplast, echo=FALSE, message=FALSE, warning=FALSE,out.width = '100%'}
+ knitr::include_graphics("images/everywhere.jpg")
+```
+
+???
+https://www.plasticstoday.com/sites/default/files/globe-plastic-bag-IRINA-Adobe-300.jpg
+
+Plast er samofið öllum kimum samfélagsins. Það er órjúfanlegur þáttur í heilsukerfinu og það léttir faratæki í lofti, á landi og láði. 
+
+
+---
+
+class: fade-row1-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
+count: false
+
+```{r bakelite, echo=FALSE, message=FALSE, warning=FALSE, out.width='80%'}
+knitr::include_graphics("https://thumbs.gfycat.com/BaggyWarlikeAmericancrow-size_restricted.gif")
+```
+
+```{r styrene-b, echo=FALSE, message=FALSE, warning=FALSE, out.width='80%'}
+knitr::include_graphics("https://thumbs.gfycat.com/OldfashionedHarshBettong-size_restricted.gif")
+```
+
+
+???
+https://www.youtube.com/watch?v=BCNWav12PdI
+Plastic is made with polymerisation of oil-derived material 
+---
+
+class: fade-row1-col1 fade-row2-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
+count: false
+
+
+
+```{r framleidsla, echo=FALSE, message=FALSE, warning=FALSE,, out.width='80%'}
+library(kableExtra)
+haus <- c('Plastic Type','Abbreviation (ensk)','World Production', 'Resin Code (RIC)')#,'Einliða resíns')
+
+type = c(
+  'Polyethylene terephthalate',
+  'Polyethylene - density > 0,94 g/cm^3^',
+  'Polyvinyl chloride',
+  'Polyethylene - density < 0,94 g/cm^3^',
+  'Polypropylene',
+  'Polystyrene',
+  'Other'
+)
+
+type.pdf = c(
+  'Polyethylene terephthalate',
+  'Polyethylene - High density',
+  'Polyvinyl chloride',
+  'Polyethylene - Low densityd',
+  'Polypropylene',
+  'Polystyrene',
+  'Other'
+)
+
+abbro= c(
+  'PET, PETE',
+  'HD-PE, PE-HD',
+  'PVC',
+  'LDPE, PE-LD',
+  'PP',
+  'PS',
+  ''
+)
+
+total=c(
+  '7%',
+  '15%',
+  '16%',
+  '17%',
+  '23%',
+  '7%',
+  '15%'
+)
+# icon=c(icon1="![](myndir/resin/text1.png)",
+#        icon2="![](myndir/resin/text2.png)",
+#        icon3="![](myndir/resin/text3.png)",
+#        icon4="![](myndir/resin/text4.png)",
+#        icon5="![](myndir/resin/text5.png)",
+#        icon6="![](myndir/resin/text6.png)",
+#        icon7="![](myndir/resin/text7.png)")
+
+
+icon=c(icon1='<img src="images/resin/text1.png" height="45.6" width="50.4"></img>',
+       icon2='<img src="images/resin/text2.png" height="45.6" width="50.4"></img>',
+       icon3='<img src="images/resin/text3.png" height="45.6" width="50.4"></img>',
+       icon4='<img src="images/resin/text4.png" height="45.6" width="50.4"></img>',
+       icon5='<img src="images/resin/text5.png" height="45.6" width="50.4"></img>',
+       icon6='<img src="images/resin/text6.png" height="45.6" width="50.4"></img>',
+       icon7='<img src="images/resin/text7.png" height="45.6" width="50.4"></img>')
+
+tafla = cbind(type.pdf, abbro, total, icon)
+dimnames(tafla)[2] <- list(haus)
+rownames(tafla) <- NULL
+tafla <- as.data.frame(tafla)
+
+#DT::datatable(tafla, escape = FALSE)
+ 
+ knitr::kable(
+   tafla,
+   align = 'c',
+   booktabs = T,
+   escape = F,
+   caption = 'International Coding System (RIC) for the most common plastics.',
+   "html"
+   )# eru númeraðar eftir alþjóðlegu flokkunarkerfi (RIC). Skammstafanirnar eru fyrir ensku heitin: (1) Polyethylene Terephthalate - PETE/PET, (2) High Density Polyethylene - HDPE/HD-PE, (3) Polyvinyl Chloride - PVC/V, (4) Low Density Polyethylene - LDPE/LD-PE, (5) Polypropylene - PP, (6) Polystyrene - PS')
+  
+
+
+```
+
+???
+Fyrsta plastefnið, Bakelite, var fundið upp um aldamótin 1900 Fenól og formaldehýð hitað og hrært saman við brennisteinssýru til að mynda fenólformaldehýðresín sem er fyrsta plastefnið eða plastresínið.
+---
+class: fade-row1-col1 fade-row2-col1 fade-row3-col1 hide-row5-col1 with-thick-border border-white
+count: false
+
+```{r homerss, echo=FALSE, message=FALSE, warning=FALSE,out.width = '50%'}
+mynd <- knitr::include_graphics("images/biopol_karin.jpg")
+mynd
+```
+
+---
+class: fade-row1-col1 fade-row2-col1 fade-row3-col1 fade-row4-col1 with-thick-border border-white
+count: false
+
+```{r homers, echo=FALSE, message=FALSE, warning=FALSE,out.width = '50%'}
+mynd <- knitr::include_graphics("images/sapa.jpg")
+mynd
+```
+
+
+---
 
 layout: true
 class: split-three with-thick-border
@@ -146,16 +323,18 @@ class: split-two with-border border-black
 
 .column[
   .split-three[
-  .row.bg-main1[.content[
-# Main Pathways
-.font2[Surface water and runoffdsdaf]
-### Í dreifbýli rennur ofanvatn að mestu í jarðveg. .orange[Helstu farleiðir] örplasts á Íslandi eru í þéttbýli, þar sem það berst með .orange[ofanvatni] í fráveitukerfin og þaðan til hafs.
+  .row.bg-main1[
+  # Main Pathways
+  ]
+  .row.bg-main2[
+  Main Pathways
+  .content.nopadding[
+.img-cover[![](images/ellidaar_saevarhofdi_02.jpg)]
   ]]
-  .row.bg-main2[.content[
-### Hægt er að skipta .white[Íslandi] upp í fjögur megin vatnasvæði. Á SV-horninu er vatnasvæði sem rennur út í .white[Faxaflóa]
-  ]]
-  .row.bg-main4[.content[
-## Þar sem mest .red[umsvif] eru þar er mest .red[örplastmengun] 
+  .row.bg-main4[
+  # Main Pathways
+  .content.nopadding[
+.img-contain[![](images/ellidaar_saevarhofdi_02.jpg)]
   ]]
 
 ]]
@@ -168,7 +347,7 @@ class: split-two with-border border-black
   ]]]
   .row.bg-white[.content.vmiddle[.center[
    .nopadding[
-.img-contain[![](images/map.png)]
+.img-fill[![](images/map.png)]
 ]
   ]]]
   
@@ -186,6 +365,7 @@ class: gray-row1-col1 gray-row3-col1
 
 Á suðvesturhorni landsins er vatnasvæði sem rennur í Faxaflóa (sjá mynd 3.1). Á því svæði býr yfir 3/4 hlutar landsmanna3 og þar er summa árdagsumferðar rúmir 3/4 hlutar á landsvísu. Flatarmál bygginga þar er yfir 50% flatarmáls allra bygginga á landsvísu74 en flatarmál málaðra flata eflaust enn meiri vegna byggingarhæðar. Flestir landsmenn fara til Reykjavíkur reglulega til að sækja þjónustu sem þar er í boði, nær allir vöruflutningar eru um svæðið og nærri allt millilandaflug. Þrír stórir slippir af fjórum eru á Höfuðborgarsvæðinu og í Grindavík. Það er því rík ástæða til að skoða þetta svæði betur.
 
+[Mynd](https://reykjavik.is/sites/default/files/styles/frettamynd/public/myndir_frettir/frettamyndir_2014_febjuli/ellidaar_saevarhofdi_02.jpg?itok=Sq0ZT5d3)
 ---
 count: false
 class: gray-row1-col1 gray-row2-col1 
@@ -282,10 +462,11 @@ class: split-two with-border border-white
 .column.bg-main3[.content[
   .split-five[
  .row.bg-main1[.content[
-### .yellow[Tirewear and road particles] along with .yellow[road paint] are the most studied and most easily transferable to Icelandic conditions.
+### .yellow[Tirewear and road particles] along with .yellow[road paint] are the most studied and can be applied to Icelandic conditions.
  ]]
   .row.bg-main2[.content[
-### .yellow[Paint] has different plastics  Gera þarf markaðsrannsókn til að meta betur plastinnihald í mismunandi húsamálningu og hlutfall málningar sem seld er til atvinnumálara og heimila.
+### .
+yellow[Paint] has different plastics  Gera þarf markaðsrannsókn til að meta betur plastinnihald í mismunandi húsamálningu og hlutfall málningar sem seld er til atvinnumálara og heimila.
  ]]
   .row.bg-main4[.content[
 ### Þegar skip eru í slipp er hætta á að málningarflyksur berist í sjó. Gera mætti athugun á starfsháttum stóru slippanna.
