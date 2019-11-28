@@ -1,6 +1,6 @@
 ---
-title: "Örplast í hafinu við Ísland"
-subtitle: "Helstu uppsprettur, magn og farleiðir í hafið"
+title: "Microplastics in Iceland"
+subtitle: "Main Sources and Pathways to the Ocean"
 author:   |
   <br><br>
   <span class="noem">Valtýr Sigurðsson</span>
@@ -8,7 +8,7 @@ author:   |
   <img src="images/tvologohex.png" width="15%" align="right" />
   <br><br>
   
-date: "<br><br>2019-09-05, Uppfært: `r format(Sys.time(), '%e. %B %Y')`"
+date: "<br><br>2019-09-05, Updated: `r format(Sys.time(), '%e. %B %Y')`"
 lang: is
 output:
   xaringan::moon_reader:
@@ -38,23 +38,19 @@ class: split-two with-thick-border border-cyan
   ]]]
 ]]
 
-.column.bg-main1[.content[
+.column.bg-main1[.content.center.vmiddle[
+# Microplastic Sampling
+# .orange[Skagaströnd] 
+## .white[<span class=" faa-pulse animated-hover " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"> [skʰaːɣastrœn̥d] </span>]
 <br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-.column.slide-in-right[
-.sliderbox.vmiddle.shade_main.center[
-# Sýnatökur og úrvinnsla 
-<br><br>
-# hjá Biopol á Skagaströnd
-<br><br>
-<br><br>
-`r anicon::cia("images/zeropoint_logo.jpg", animate="ring", size=6, anitype="parent-hover")`
+
+```{r logo, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '50%'}
+mynd <- knitr::include_graphics("images/zeropoint_logo.jpg")
+mynd
+```
+
 ]]
-]]
+
 ???
 Takið eftir kaðlinum
 ---
@@ -67,24 +63,24 @@ class: split-three with-thick-border
 
 .column.bg-main1[.content[
 
-# .orange[Hvað er örplast?]
+# .orange[What are microplastics?]
 .nopadding[
 .img-fill[![](images/orplast_science.jpg)]
 ]
 ]]
 .column.bg-main2[.content[
-# .orange[Örplast] .black[á við um allar plastagnir smærri en] 
+# .orange[Microplastics:] .black[all plastic particles smaller than] 
 # .orange[<span class=" faa-tada animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"> 5 mm</span>]
 <br>
-# .orange[Það eyðist á mjög löngum tíma] .black[sérstaklega í hafinu]
+## .orange[Very slow degradation] .black[in the marine environment]
 <br>
-### .black[Sumar gerðir] .red[fljóta] .black[en aðrar] .red[sökkva] .black[eða mara í hálfu kafi í sjónum].
+### .black[Some particles] .red[float] .black[while others] .red[sink] .black[or drift in the ocean layers.]
+### .black[Difficult] .yellow[to see] .black[ and challenging to study.]
 ]]
 .column.bg-main4[.content[
-# .black[Erfitt] .yellow[að sjá] .black[ og vandasamt að rannsaka.]
+# .orange[Where does Microplastic come from?]
 <br>
 .img-fill[![](images/animated_plot.gif)]
-# .orange[Hvaðan kemur örplast?]
 ]]
 
 ???
@@ -114,17 +110,17 @@ class: split-33
 
 .column.bg-main2[.content.vmiddle[
 .center[
-# Helstu uppsprettur
+# Main Sources
 ]
 <br><br>
-## Bifreiðahjólbarðar
-## Vegmerkingar
-## Málning
-## Gervigras og leiksvæði
-## Þvottur
-## Snyrtivörur
-## Veiðarfæri
-## Rusl í fjörum
+### .red[Tirewear Particles]
+### .deep-orange[Road Paint]
+### .orange[House Paint]
+### .amber[Artificial Turf and Playgrounds]
+### .amber[Laundry]
+### .orange[Cosmetics]
+### .deep-orange[Fishing Gear]
+### .red[Plastic Waste on the Coastline]
 ]]
 .column[.content[
 .center[
@@ -137,6 +133,7 @@ knitr::include_graphics("images/samansetning.png")
 
 
 ???
+Fishing gear needs closer attention
 Veiðarfæri þarf að rannsaka betur. Sum veiðarfæri trosna við notkun og losnar nælon ofl. örplast þannig beint í hafið. Þetta er ekki flókinn iðnaður þá að hann sé stórtækur og því ætti að vera hægt að fylgjast betur með því hve mikið af veiðarfærum er í umferð
 Fjörurnar eru eins og verksmiðjur sem mala örplast úr stærra plastrusli
 
@@ -165,12 +162,12 @@ class: split-two with-border border-black
   .split-two[
   .row.bg-white[.content.vmiddle[.center[
    .nopadding[
-.img-fill[![](images/ALTA.png)]
+.img-none[![](images/ALTA.png)]
 ]
   ]]]
   .row.bg-white[.content.vmiddle[.center[
    .nopadding[
-.img-fill[![](images/map.png)]
+.img-none[![](images/map.png)]
 ]
   ]]]
   
@@ -202,10 +199,10 @@ class: split-33
 
 .column.bg-main2[.content.vmiddle[
 .center[
-# Helstu uppsprettur
-
-<br><br>
-Magn
+# Main Sources of Microplastics
+<br>
+<br>
+.font-mono[Estimates in tonnes]
 ]]]
 .column[.content[
 .center[
@@ -214,23 +211,23 @@ Magn
 value <- c(371, 41, 26, 33.2, 60, 3, 0.2, 8.2, 0.34, 1, 0.002) #Uppspretta lægra mat
 losun <- c(164, 5.7,  0, 15.2, 3.2, 0.3, 0, 8.2, 0.34, 0, 0.002) #losun lægra mat
 #value <- c(379,586,38,233,21,48,3,11,8,32,0.3,3)
-heiti <- c('Bifreiðahjólbarðar',
-          'Vegmerkingar',
-          'Flugvélahjólbarðar',
-          'Húsamálning',
-          'Skipamálning',
-          'Gervigras',
-          'Leikvellir',
-          'Þvottur',
-          'Snyrtivörur',
-          'Haglaskot',
-          'Sigvatn')
+heiti <- c('Car tires',
+          'Road paint',
+          'Airplane tires',
+          'House paint',
+          'Ship paint',
+          'Artificial turf',
+          'Playgrounds',
+          'Laundry',
+          'Cosmetics',
+          'Hail shots',
+          'Landfill leachates')
 land <- value-losun
 df <- data.frame(heiti,land,losun)
 df <- df[order(df$heiti),]
 
 library(networkD3)
-nodes <- c(levels(df$heiti), 'Land','Haf')
+nodes <- c(levels(df$heiti), 'Land','Sea')
 nodes <- as.data.frame(nodes)
 names(nodes) <- "name"
 
@@ -260,7 +257,7 @@ sn <- sankeyNetwork(
   units = "tonn",
   colourScale = JS("d3.scaleOrdinal(d3.schemeCategory20);"),
   fontSize = 20,
-  nodeWidth = 30, height = "681px", fontFamily = "Courier"
+  nodeWidth = 30, height = "681px", fontFamily = "Monospace"
 )
 rammi <- widgetframe::frameWidget(sn)
 rammi
@@ -283,10 +280,10 @@ class: split-two with-border border-white
 .column.bg-main3[.content[
   .split-five[
  .row.bg-main1[.content[
-### Dekkjakurl og vegmerkingar eru einna mest rannsakaða viðfangsefnið erlendis og yfirfærist ágætlega á Íslenskar aðstæður.
+### .yellow[Tirewear and road particles] along with .yellow[road paint] are the most studied and most easily transferable to Icelandic conditions.
  ]]
   .row.bg-main2[.content[
-### Gera þarf markaðsrannsókn til að meta betur plastinnihald í mismunandi húsamálningu og hlutfall málningar sem seld er til atvinnumálara og heimila.
+### .yellow[Paint] has different plastics  Gera þarf markaðsrannsókn til að meta betur plastinnihald í mismunandi húsamálningu og hlutfall málningar sem seld er til atvinnumálara og heimila.
  ]]
   .row.bg-main4[.content[
 ### Þegar skip eru í slipp er hætta á að málningarflyksur berist í sjó. Gera mætti athugun á starfsháttum stóru slippanna.
@@ -335,26 +332,26 @@ mynd
 class: fade-row1-col1 fade-row2-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
 count: false
 
-```{r slippur, echo=FALSE, message=FALSE, warning=FALSE, fig.show='hold',out.width = '50%', dev.args=list(bg="transparent"),fig.cap='Samband skipslengdar og botnflatar. Kökuritið sýnir hlutfall botnflatar íslenskra fiskiskipa í þremur stærðarflokkum', fig.align='center' }
+```{r slippur, echo=FALSE, message=FALSE, warning=FALSE, fig.show='hold',out.width = '50%', dev.args=list(bg="transparent"),fig.cap='Hull length vs. hull area. Pie chart shows hull area by size categorys of ships', fig.align='center' }
 par(mar = c(4.6, 6, 0, 0))
 Batar <- read.csv("skjol/batar.csv",fileEncoding = "UTF-8")
 litlir <- Batar[Batar$Lengd<15,]
 storir <- Batar[Batar$Lengd>30,]
 adrir <- Batar[!rownames(Batar) %in% c(rownames(litlir),rownames(storir)),]
-Batar$gerd <- ifelse(Batar$Lengd<15, "Smábátar",ifelse(Batar$Lengd>15 & Batar$Lengd<30,"Miðlungs","Stór skip"))
+Batar$gerd <- ifelse(Batar$Lengd<15, "Small boats",ifelse(Batar$Lengd>15 & Batar$Lengd<30,"Medium boats","Larger ships"))
 
 litura="#cb5600"
 liturb="#28c1ff"
 
-yLab=expression(paste("Botnflötur ( ",m^2,")"))
-xLab="Lengd (m)"
+yLab=expression(paste("Hull Area ( ",m^2,")"))
+xLab="Ship Length (m)"
 plot(Batar$Lengd,(Batar$WSA),type='n', ylab = "",xlab="")
 mtext(xLab,1,3,cex=2)
 mtext(yLab,2,3,cex=2)
 points(litlir$Lengd,(litlir$WSA),col=liturb, pch=18)
 points(adrir$Lengd,(adrir$WSA),col=1)
 points(storir$Lengd,(storir$WSA),col=litura, pch=19)
-legend("topleft",c("Smábátar <15m. N=972","Miðlungs N=75","Stór skip >30m. N=99"),col = c(liturb,1,litura),pch = c(18,1,19),cex=2,bty='n')
+legend("topleft",c("Small boats <15m. N=972","Mid sized ships N=75","Larger ships >30m. N=99"),col = c(liturb,1,litura),pch = c(18,1,19),cex=2,bty='n')
 
 # landi <- data.frame(
 #   skr=c(2890,2889,2895,1868,2170,1902,2881,2882,2184),
@@ -395,9 +392,11 @@ mynd
 layout: false
 class: bg-main1 
 
-# Kærar þakkir fyrir áheyrnina!
+# Thanks for listening!
 .font2[
-* .yellow[Skýrsluna] má nálgast hér [`r anicon::faa('external-link-alt', animate='float', rtext='Örplastskýrsla')`](https://harkanatta.github.io/orplastskyrslaUAR/)
-* .yellow[Vinnusvæði] skýrslunnar er [`r anicon::faa("github", animate="vertical")` hér](https://github.com/harkanatta/orplastskyrslaUAR) 
+* .yellow[The report] can be attained here [`r anicon::faa('external-link-alt', animate='float', rtext='MP report')`](https://harkanatta.github.io/orplastskyrslaUAR/) (**in Icelandic**)
+* .yellow[The Github repo] is here [`r anicon::faa("github", animate="vertical")` hér](https://github.com/harkanatta/orplastskyrslaUAR) 
 ]
+* This presentation was made with the R Package [Xaringan](https://github.com/yihui/xaringan) after a [template](https://emitanaka.org/ninja-theme/themes/kunoichi/kunoichi-theme-example.html) by Emi Tanaka
+
 

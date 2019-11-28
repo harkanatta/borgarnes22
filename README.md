@@ -1,1 +1,2 @@
-# innragrunn
+# Sources and Pathways of Microplastics to Icelandic Seas (**a talk**)
+This is the english version of a talk about the results of a report that was made for the environmental ministry of Iceland. Here is the [talk](https://harkanatta.github.io/mp-mirror/) and here is the [report](https://harkanatta.github.io/orplastskyrslaUAR/) (**in Icelandic**)
