@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script&display=swap);
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("//db.onlinewebfonts.com/c/f59f945c803a46fe017610dbd1914db7?family=Aachen");
 
 /******************
  kunoichi.css must also be coupled with ninjutsu.css to be effective
@@ -111,6 +112,10 @@
 
 .font-perm {
   font-family: Permanent Marker;
+}
+
+.font-pulp {
+  font-family: Aachen;
 }
 
 .remark-code-line-highlighted { background-color: var(--code-highlight); }

@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <link href="libs/remark-css/kunoichiB.css" rel="stylesheet" />
     <link href="libs/remark-css/ninjutsuB.css" rel="stylesheet" />
+    <script src="libs/kePrint/kePrint.js"></script>
     <script src="libs/htmlwidgets/htmlwidgets.js"></script>
     <script src="libs/pymjs/pym.v1.js"></script>
     <script src="libs/widgetframe-binding/widgetframe.js"></script>
@@ -20,7 +21,7 @@ class: center, middle, inverse, title-slide
 ## Main Sources and Pathways to the Ocean
 ### <p><br><br> <span class="noem">Valtýr Sigurðsson</span> <br><br> <img src="images/tvologohex.png" width="15%" align="right" /></p>
 <br><br><br>
-### <br><br>2019-09-05, updated: 28. nóvember 2019
+### <br><br>2019-09-05, updated: 29. nóvember 2019
 
 ---
 
@@ -63,20 +64,20 @@ class: split-two with-border border-white
 .column.bg-main3[.content[
   .split-five[
  .row.bg-main1[.content.center.vmiddle[
-.font-dance.font3[Plastic is everywhere]
+.font-dance.font3.black[Plastic is everywhere]
  ]]
   .row.bg-main2[.content.center[ It is made with &lt;br&gt;
-.font-perm.font3[&lt;span class=" faa-pulse animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"&gt; Chemistry!!]
+.font-perm.font3[&lt;span class=" faa-pulse animated faa-fast" style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"&gt; Chemistry!!]
  ]]
-  .row.bg-main4[.content[
+  .row.bg-main4[.split-two.content[
 &lt;img src="images/wikilogo.png" width="5%" /&gt;
 .font-mono[The International Resin Identification Coding System (RIC) is a set of symbols that identify the plastic resin out of which products are made]
  ]]
-  .row.bg-main2[.content[
-### Tölur um losun frá þvotti á fatnaði úr gerviefnum eru komnar til ára sinna og því nauðsynlegt að uppfæra þær.
+  .row.bg-main2[.content.vmiddle[
+## The term .red[microplastic] was coined in 2004 by Richard C. Thompson
  ]]
-   .row.bg-main1[.content[
-### Örplast frá snyrtivörum er aðallega vegna handsápu af verkstæðum. 
+   .row.bg-main1[.content.center[
+## Published international science articles about microplastics in growing numbers ever since.
  ]]
  ]
 ]]
@@ -93,7 +94,7 @@ Define the layout and for sequence hide the appropriate cell.
 class: hide-row2-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
 
 &lt;img src="images/everywhere.jpg" width="100%" /&gt;
-
+https://www.plasticstoday.com/
 ???
 https://www.plasticstoday.com/sites/default/files/globe-plastic-bag-IRINA-Adobe-300.jpg
 
@@ -102,30 +103,34 @@ Plast er samofið öllum kimum samfélagsins. Það er órjúfanlegur þáttur �
 
 ---
 
-class: fade-row1-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-count: false
+class: hide-row1-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
 
-&lt;img src="https://thumbs.gfycat.com/BaggyWarlikeAmericancrow-size_restricted.gif" width="80%" /&gt;
 
-&lt;img src="https://thumbs.gfycat.com/OldfashionedHarshBettong-size_restricted.gif" width="80%" /&gt;
+&lt;img src="https://thumbs.gfycat.com/BaggyWarlikeAmericancrow-size_restricted.gif" width="75%" /&gt;
+
+&lt;img src="images/bakelite.png" width="75%" /&gt;
 
 
 ???
 https://www.youtube.com/watch?v=BCNWav12PdI
-Plastic is made with polymerisation of oil-derived material 
+
+I don't know anything about chemistry but this is to show how the first plasticresin is made from liquid materials (phenol, formaldehyde and sulfuric acid) wich led to bakelite
+
+Plastic is made with polymerisation of oil-derived materials
+
+Fyrsta plastefnið, Bakelite, var fundið upp um aldamótin 1900 Fenól og formaldehýð hitað og hrært saman við brennisteinssýru til að mynda fenólformaldehýðresín sem er fyrsta plastefnið eða plastresínið.
 ---
 
-class: fade-row1-col1 fade-row2-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-count: false
+class: hide-row1-col1 hide-row2-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
 
 
 
-&lt;table&gt;
-&lt;caption&gt;International Coding System (RIC) for the most common plastics.&lt;/caption&gt;
+
+&lt;table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;"&gt;
  &lt;thead&gt;
   &lt;tr&gt;
    &lt;th style="text-align:center;"&gt; Plastic Type &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; Abbreviation (ensk) &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Abbreviation &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; World Production &lt;/th&gt;
    &lt;th style="text-align:center;"&gt; Resin Code (RIC) &lt;/th&gt;
   &lt;/tr&gt;
@@ -135,43 +140,43 @@ count: false
    &lt;td style="text-align:center;"&gt; Polyethylene terephthalate &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; PET, PETE &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 7% &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text1.png" height="45.6" width="50.4"&gt;&lt;/img&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text1.png" height="45.6" width="50.4"&gt; &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; Polyethylene - High density &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; HD-PE, PE-HD &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 15% &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text2.png" height="45.6" width="50.4"&gt;&lt;/img&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text2.png" height="45.6" width="50.4"&gt; &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; Polyvinyl chloride &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; PVC &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 16% &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text3.png" height="45.6" width="50.4"&gt;&lt;/img&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text3.png" height="45.6" width="50.4"&gt; &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; Polyethylene - Low densityd &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; LDPE, PE-LD &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 17% &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text4.png" height="45.6" width="50.4"&gt;&lt;/img&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text4.png" height="45.6" width="50.4"&gt; &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; Polypropylene &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; PP &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 23% &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text5.png" height="45.6" width="50.4"&gt;&lt;/img&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text5.png" height="45.6" width="50.4"&gt; &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; Polystyrene &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; PS &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 7% &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text6.png" height="45.6" width="50.4"&gt;&lt;/img&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text6.png" height="45.6" width="50.4"&gt; &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; Other &lt;/td&gt;
    &lt;td style="text-align:center;"&gt;  &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 15% &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text7.png" height="45.6" width="50.4"&gt;&lt;/img&gt; &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; &lt;img src="images/resin/text7.png" height="45.6" width="50.4"&gt; &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -179,16 +184,16 @@ count: false
 ???
 Fyrsta plastefnið, Bakelite, var fundið upp um aldamótin 1900 Fenól og formaldehýð hitað og hrært saman við brennisteinssýru til að mynda fenólformaldehýðresín sem er fyrsta plastefnið eða plastresínið.
 ---
-class: fade-row1-col1 fade-row2-col1 fade-row3-col1 hide-row5-col1 with-thick-border border-white
-count: false
+class: hide-row1-col1 hide-row2-col1 hide-row3-col1 hide-row5-col1 with-thick-border border-white
 
-&lt;img src="images/biopol_karin.jpg" width="50%" /&gt;
+
+&lt;img src="images/thompson1930.png" width="100%" /&gt;
 
 ---
-class: fade-row1-col1 fade-row2-col1 fade-row3-col1 fade-row4-col1 with-thick-border border-white
+class: hide-row1-col1 hide-row2-col1 hide-row3-col1 fade-row4-col1 with-thick-border border-white
 count: false
 
-&lt;img src="images/sapa.jpg" width="50%" /&gt;
+&lt;img src="index_files/figure-html/pubtrend-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
 ---
@@ -198,13 +203,13 @@ class: split-three with-thick-border
 
 .column.bg-main1[.content[
 
-# .orange[What are microplastics?]
+# .indigo[What is microplastic?]
 .nopadding[
 .img-fill[![](images/orplast_science.jpg)]
 ]
 ]]
 .column.bg-main2[.content[
-# .orange[Microplastics:] .black[all plastic particles smaller than] 
+# .orange[Microplastic:] .black[all plastic particles smaller than] 
 # .orange[&lt;span class=" faa-tada animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"&gt; 5 mm&lt;/span&gt;]
 &lt;br&gt;
 ## .orange[Very slow degradation] .black[in the marine environment]
@@ -212,8 +217,8 @@ class: split-three with-thick-border
 ### .black[Some particles] .red[float] .black[while others] .red[sink] .black[or drift in the ocean layers.]
 ### .black[Difficult] .yellow[to see] .black[ and challenging to study.]
 ]]
-.column.bg-main4[.content[
-# .indigo.font-dance[Where does Microplastic come from?]
+.column.bg-red[.content[
+.yellow.font-pulp.font2[WHERE DOES MICROPLASTIC COME FROM?]
 &lt;br&gt;
 .img-fill[![](images/animated_plot.gif)]
 ]]
@@ -228,7 +233,7 @@ class: show-100
 Þetta er sýni úr sjávarseti og þarna má sjá þræði úr fatnaði eða veiðarfærum og fleiri plastagnir sem hafa verið teknar frá öllu hinu gumsinu í sýninu.
 ---
 class: show-110
-count: false
+
 ???
 Örplast er jafn fjölbreytt og plast er almennt og það er flest hannað til þess að endast
 ---
@@ -270,62 +275,76 @@ Fishing gear needs closer attention
 Veiðarfæri þarf að rannsaka betur. Sum veiðarfæri trosna við notkun og losnar nælon ofl. örplast þannig beint í hafið. Þetta er ekki flókinn iðnaður þá að hann sé stórtækur og því ætti að vera hægt að fylgjast betur með því hve mikið af veiðarfærum er í umferð
 Fjörurnar eru eins og verksmiðjur sem mala örplast úr stærra plastrusli
 
+Samsett mynd:
+https://www.abc.net.au/news/2019-09-26/delicate-washing-cycle-releases-microplastics/11551356
+...ofl.
 ---
 
+layout: false
+class: split-33
 
-layout: true
-class: split-two with-border border-black
-
-.column[
-  .split-three[
-  .row.bg-main1[
-  # Main Pathways
-  ]
-  .row.bg-main2[
-  Main Pathways
-  .content.nopadding[
-.img-cover[![](images/ellidaar_saevarhofdi_02.jpg)]
-  ]]
-  .row.bg-main4[
-  # Main Pathways
-  .content.nopadding[
-.img-contain[![](images/ellidaar_saevarhofdi_02.jpg)]
-  ]]
-
+.column.bg-main3[.content.vmiddle.center[
+.white[
+# Main Pathways
+]
 ]]
-.column[.content[
-  .split-two[
-  .row.bg-white[.content.vmiddle[.center[
-   .nopadding[
+.column[.content.vmiddle.center[
+.center[
 .img-contain[![](images/ALTA.png)]
-]
-  ]]]
-  .row.bg-white[.content.vmiddle[.center[
-   .nopadding[
-.img-fill[![](images/map.png)]
-]
-  ]]]
-  
+.img-fill[![](images/runoff.jpeg)]
+]]]
+
+
+???
+In urban areas more runoff-water flows through the sewage
+---
+
+layout: false
+class: split-33
+
+.column.bg-main3[.content.vmiddle.center[
+.white[
+# Main Pathways
 ]
 ]]
+.column[.content.vmiddle.center[
+.center[
+.img-contain[![](images/ALTA.png)]
+.img-fill[![](images/ellidaar_saevarhofdi_02.jpg)]
+]]]
 
 
----
-class: gray-row2-col1 gray-row3-col1 
----
-count: false
-class: gray-row1-col1 gray-row3-col1 
 ???
+In urban areas more runoff-water flows through the sewage
+---
+
+layout: false
+class: split-33
+
+.column.bg-main3[.content.vmiddle.center[
+.white[
+# Main Pathways
+]
+]]
+.column[.content.vmiddle.center[
+.center[
+.img-contain[![](images/ALTA.png)]
+.img-cover[![](images/map.png))]
+]]]
+
+
+???
+In urban areas more runoff-water flows through the sewage
+
+Hafið er kalt og dimmt og því ekki góðar aðstæður fyrir niðurbrot.
+Örplast getur borist langar leiðir í höfunum, bæði í yfirborðslögunum og á meira dýpi. Einhver mesti þéttleiki sem hefur fundist í botnseti var á Svalbarða.
+
 Í dreifbýli rennur ofanvatn að mestu í jarðveg. .orange[Helstu farleiðir] örplasts á Íslandi eru í þéttbýli, þar sem það berst með ofanvatni í fráveitukerfin og þaðan til hafs.
 
 Á suðvesturhorni landsins er vatnasvæði sem rennur í Faxaflóa (sjá mynd 3.1). Á því svæði býr yfir 3/4 hlutar landsmanna3 og þar er summa árdagsumferðar rúmir 3/4 hlutar á landsvísu. Flatarmál bygginga þar er yfir 50% flatarmáls allra bygginga á landsvísu74 en flatarmál málaðra flata eflaust enn meiri vegna byggingarhæðar. Flestir landsmenn fara til Reykjavíkur reglulega til að sækja þjónustu sem þar er í boði, nær allir vöruflutningar eru um svæðið og nærri allt millilandaflug. Þrír stórir slippir af fjórum eru á Höfuðborgarsvæðinu og í Grindavík. Það er því rík ástæða til að skoða þetta svæði betur.
 
 [Mynd](https://reykjavik.is/sites/default/files/styles/frettamynd/public/myndir_frettir/frettamyndir_2014_febjuli/ellidaar_saevarhofdi_02.jpg?itok=Sq0ZT5d3)
----
-count: false
-class: gray-row1-col1 gray-row2-col1 
 
-???
 Mynd birt með góðfúslegu leyfi Alta
 ---
 
@@ -343,8 +362,8 @@ class: split-33
 ]]]
 .column[.content[
 .center[
-<div id="htmlwidget-2dd940656fd65305a278" style="width:100%;height:681px;" class="widgetframe html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2dd940656fd65305a278">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b904288c0ad798401c16" style="width:100%;height:681px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b904288c0ad798401c16">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ]]]
 
@@ -361,18 +380,21 @@ class: split-two with-border border-white
 
 .column.bg-main3[.content[
   .split-five[
- .row.bg-main1[.content[
-### .yellow[Tirewear and road particles] along with .yellow[road paint] are the most studied and can be applied to Icelandic conditions.
+ .row.bg-main1[.content.left[
+* .yellow[The soles] of tires are made of a synthetic rubber blend. 
+* .yellow[Tirewear and road particles] along with .yellow[road paint] are the most studied and can be applied to Icelandic conditions.
+* These particles range mostly from 10-100 µm (bigger than aerosol)
  ]]
-  .row.bg-main2[.content[
-### .
-yellow[Paint] has different plastics  Gera þarf markaðsrannsókn til að meta betur plastinnihald í mismunandi húsamálningu og hlutfall málningar sem seld er til atvinnumálara og heimila.
+  .row.bg-main2[.content.left[
+* On road no. 1 around thi island and along country roads 90% of road runoff goes to the soil and 10% to surface water
+* In urban areas the ratio is closer to 40% to soil and 60% to the sewers.
+
  ]]
   .row.bg-main4[.content[
-### Þegar skip eru í slipp er hætta á að málningarflyksur berist í sjó. Gera mætti athugun á starfsháttum stóru slippanna.
+#### Overspray and flakes of old washed-off ship paint settles around in shipyards. This may be an important source of microplastic pollution. One large ship requires tonnes of paint every couple of years. 
  ]]
   .row.bg-main2[.content[
-### Tölur um losun frá þvotti á fatnaði úr gerviefnum eru komnar til ára sinna og því nauðsynlegt að uppfæra þær.
+### Synthetic fibers go unhindered through almost all sewage systems in Iceland. The data has come to age.
  ]]
    .row.bg-main1[.content[
 ### Örplast frá snyrtivörum er aðallega vegna handsápu af verkstæðum. 
@@ -391,7 +413,7 @@ Define the layout and for sequence hide the appropriate cell.
 
 class: hide-row2-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
 
-&lt;img src="images/vegmerkingarorplast.png" width="50%" /&gt;
+&lt;img src="images/vegmerkingarorplast.png" width="60%" /&gt;&lt;img src="images/twp.png" width="60%" /&gt;
 
 ???
 
@@ -400,14 +422,20 @@ Stærsta uppspretta örplasts í umhverfinu á Íslandi, sem lagt var mat á, er
 ---
 
 class: fade-row1-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-count: false
 
-&lt;img src="images/thok.png" width="50%" /&gt;
 
+&lt;div class="figure"&gt;
+<div id="htmlwidget-75c23522e59a535acff0" style="width:100%;height:500px;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-75c23522e59a535acff0">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+&lt;p class="caption"&gt;Microplastic release on land and in the ocean&lt;/p&gt;
+&lt;/div&gt;
+
+???
+Á þjóðvegum og sveitavegum fari 90% af affallsvatni vega í jarðveginn og 10% í yfirborðsvatn; skurði, ár og læki Í þéttbýli hérlendis fari 40% af affallsvatni vega í jarðveginn en 60% í ræsi.
 ---
 
 class: fade-row1-col1 fade-row2-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-count: false
+
 
 &lt;div class="figure" style="text-align: center"&gt;
 &lt;img src="index_files/figure-html/slippur-1.png" alt="Hull length vs. hull area. Pie chart shows hull area by size categorys of ships" width="50%" /&gt;&lt;img src="index_files/figure-html/slippur-2.png" alt="Hull length vs. hull area. Pie chart shows hull area by size categorys of ships" width="50%" /&gt;
@@ -416,17 +444,76 @@ count: false
 
 ---
 class: fade-row1-col1 fade-row2-col1 fade-row3-col1 hide-row5-col1 with-thick-border border-white
-count: false
+
 
 &lt;img src="images/DEFALCO2018.jpg" width="50%" /&gt;
 
 ---
 class: fade-row1-col1 fade-row2-col1 fade-row3-col1 fade-row4-col1 with-thick-border border-white
-count: false
 
-&lt;img src="images/sapa.jpg" width="50%" /&gt;
+
+&lt;img src="images/thok.png" width="100%" /&gt;&lt;img src="images/burstathrif.png" width="100%" /&gt;
 
 ---
+
+layout: false
+class: split-33
+
+.column.bg-main5[.content.vmiddle.center[
+.white[
+
+]
+]]
+.column[.content.vmiddle.center[
+.center[
+&lt;img src="https://media1.giphy.com/media/5q3NyUvgt1w9unrLJ9/giphy.gif?cid=790b7611fa76dcfac60fff701200f71b0c6d5907e97efbef&amp;rid=giphy.gif" height="20%" align="center" /&gt;
+]]]
+
+
+???
+In urban areas more runoff-water flows through the sewage
+
+---
+
+layout: false
+class: split-two 
+
+.column.bg-main1[.content[
+## Fishing gear
+&lt;img src="images/veidarf.png" width="100%" /&gt;
+
+
+
++ As much as 7,000 tonnes in Icelandic seas
+
++ 1,300 tonnes of fishing gear put in waste management
+
++ If only 0.5-1% wears off the microplastic pollution is considerable
+
+]]
+
+
+.column[.bg-white[.content[
+## The coast
+
+![Trash on the Icelandic coastline. Data: OSPAR.](index_files/figure-html/ospartafla-1.png)
+
+
++ 95% plastic
++ Data still lacking
++ OSPAR records no. of items but not weight
+
+
+]]]
+
+???
+Orkumikil kerfi sem virka eins og myllur fyrir örplast
+
+
+Losun örplasts fer eftir því hvernig veiðarfæri um ræðir en sum þeirra slitna og missa þræði við notkun í mismiklum mæli. Aðrar gerðir veiðarfæra líkt og grásleppunet og handfæralínur slitna ekki með þeim hætti. Í sænskri rannsókn var losun örplasts metin 1-10% af heildarþyngd veiðarfæra
+Minnast á sjókvíaeldi
+---
+
 layout: false
 class: bg-main1 
 

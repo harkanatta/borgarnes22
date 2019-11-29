@@ -1,0 +1,10 @@
+base
+networkD3
+plyr
+kableExtra
+RColorBrewer
+magrittr
+htmlwidgets
+widgetframe
+dplyr
+tidyr
