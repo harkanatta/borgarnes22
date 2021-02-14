@@ -13,6 +13,7 @@ date: "<br><br>2019-09-05, updated: `r format(Sys.time(), '%e. %B %Y')`"
 lang: is
 output:
   xaringan::moon_reader:
+    seal: false
     lib_dir: libs
     css: ["kunoichiB", "ninjutsuB" , "assets/ninpo.css"]
     self_contained: false
@@ -23,268 +24,98 @@ output:
       countIncrementalSlides: false
 
 ---
+class: center, top
+background-image: url("https://thumbs.gfycat.com/PersonalInfantileCuckoo-size_restricted.gif")
+background-size: 100%
+.content.vmiddle[
+.center[
+# .white[Main Sources and Pathways of Microplastics]
+## .white[in Iceland]
+### Made by BioPol for the Environmental Ministry
+]]
+
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][tactical_hog](https://gfycat.com/personalinfantilecuckoo)]]
+]
+---
 layout: false
 class: split-two with-thick-border border-cyan
-.column.bg-white[
+.column.bg-main1[
   .split-two[
-.row.bg-white[.content.vmiddle[.center[
-  .nopadding[
+.row.bg-main1[.content.vmiddle[
+.center[
+.nopadding[
 .img-fill[![](https://raw.githubusercontent.com/harkanatta/innragrunn/master/docs/images/biopol_synataka.jpg)]
+]]]]
+.row.bg-main1[
+.bottom_abs[
+```{r logo, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '25%'}
+mynd <- knitr::include_graphics("images/biopol_logo.jpg")
+mynd
+```
 ]
-  ]]]
-  .row.bg-white[.content.vmiddle[.center[
-  .nopadding[
+.content.vmiddle[.center[
+.nopadding[
 .img-fill[![](images/biopol_karin.jpg)]
-]
-  ]]]
-]]
+]]]]]]
 
-.column.bg-main1[.content.center.vmiddle[
-# Microplastic Sampling
-# .deep-orange[Skagaströnd] 
-## .white[<span class=" faa-pulse animated-hover " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"> [skʰaːɣastrœn̥d] </span>]
-<br><br>
-
-```{r logo, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '50%'}
-mynd <- knitr::include_graphics("images/zeropoint_logo.jpg")
+.column.bg-main1[
+  .split-two[
+.row.bg-main1[.content.vmiddle[
+.center[
+.nopadding[
+```{r dori, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
+mynd <- knitr::include_graphics("images/dorimugg.jpg")
 mynd
 ```
+]]]]
+.row.bg-main1[
 
-]]
+.content.vmiddle[
+.center[
+ ## Microplastic .orange[Sampling `r icon::octicons$beaker`] and 
+ ## .yellow[Analyzing `r icon::octicons$graph`]
+ ## Desktop studies and Reports `r icon::octicons$device_desktop`
+
+]]]]]
+
 
 ???
+Why us?/How this project came to me
 Takið eftir kaðlinum
-
----
-
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
-
-layout: true
-class: split-two with-border border-white
-
-.column.bg-main3[.content[
-  .split-five[
- .row.bg-main1[.content.center.vmiddle[
-.font-dance.font3.black[Plastic is everywhere]
- ]]
-  .row.bg-main2[.content.center[ It is made with <br>
-.font-perm.font3[<span class=" faa-pulse animated faa-fast" style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"> Chemistry!!]
- ]]
-  .row.bg-main4[.split-two.content[
-```{r wlogo, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '5%'}
-mynd <- knitr::include_graphics("images/wikilogo.png")
-mynd
-```
-.font-mono[The International Resin Identification Coding System (RIC) is a set of symbols that identify the plastic resin out of which products are made]
- ]]
-  .row.bg-main2[.content.vmiddle[
-## The term .red[microplastic] was coined in 2004 by Richard C. Thompson
- ]]
-   .row.bg-main1[.content.center[
-## Published international science articles about microplastics in growing numbers ever since.
- ]]
- ]
-]]
-
-.column.bg-white[.content.center.vmiddle[
-{{content}}
-]]
-
-???
-Define the layout and for sequence hide the appropriate cell.
-
----
-
-class: hide-row2-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-
-```{r stortplast, echo=FALSE, message=FALSE, warning=FALSE,out.width = '100%'}
- knitr::include_graphics("images/everywhere.jpg")
-```
-https://www.plasticstoday.com/
-???
-https://www.plasticstoday.com/sites/default/files/globe-plastic-bag-IRINA-Adobe-300.jpg
-
-Plast er samofið öllum kimum samfélagsins. Það er órjúfanlegur þáttur í heilsukerfinu og það léttir faratæki í lofti, á landi og láði. 
-
-
----
-
-class: hide-row1-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-
-
-```{r bakelite, echo=FALSE, message=FALSE, warning=FALSE, out.width='75%'}
-knitr::include_graphics("https://thumbs.gfycat.com/BaggyWarlikeAmericancrow-size_restricted.gif")
-```
-
-```{r styrene-b, echo=FALSE, message=FALSE, warning=FALSE, out.width='75%'}
-knitr::include_graphics("images/bakelite.png")
-```
-
-
-???
-https://www.youtube.com/watch?v=BCNWav12PdI
-
-I don't know anything about chemistry but this is to show how the first plasticresin is made from liquid materials (phenol, formaldehyde and sulfuric acid) wich led to bakelite
-
-Plastic is made with polymerisation of oil-derived materials
-
-Fyrsta plastefnið, Bakelite, var fundið upp um aldamótin 1900 Fenól og formaldehýð hitað og hrært saman við brennisteinssýru til að mynda fenólformaldehýðresín sem er fyrsta plastefnið eða plastresínið.
----
-
-class: hide-row1-col1 hide-row2-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-
-
-
-
-```{r framleidsla, echo=FALSE, message=FALSE, warning=FALSE, out.width='100%'}
-library(kableExtra)
-haus <- c('Plastic Type','Abbreviation','World Production', 'Resin Code (RIC)')#,'Einliða resíns')
-
-type = c(
-  'Polyethylene terephthalate',
-  'Polyethylene - density > 0,94 g/cm^3^',
-  'Polyvinyl chloride',
-  'Polyethylene - density < 0,94 g/cm^3^',
-  'Polypropylene',
-  'Polystyrene',
-  'Other'
-)
-
-type.pdf = c(
-  'Polyethylene terephthalate',
-  'Polyethylene - High density',
-  'Polyvinyl chloride',
-  'Polyethylene - Low densityd',
-  'Polypropylene',
-  'Polystyrene',
-  'Other'
-)
-
-abbro= c(
-  'PET, PETE',
-  'HD-PE, PE-HD',
-  'PVC',
-  'LDPE, PE-LD',
-  'PP',
-  'PS',
-  ''
-)
-
-total=c(
-  '7%',
-  '15%',
-  '16%',
-  '17%',
-  '23%',
-  '7%',
-  '15%'
-)
-# icon=c(icon1="![](myndir/resin/text1.png)",
-#        icon2="![](myndir/resin/text2.png)",
-#        icon3="![](myndir/resin/text3.png)",
-#        icon4="![](myndir/resin/text4.png)",
-#        icon5="![](myndir/resin/text5.png)",
-#        icon6="![](myndir/resin/text6.png)",
-#        icon7="![](myndir/resin/text7.png)")
-
-
-icon=c(icon1='<img src="images/resin/text1.png" height="45.6" width="50.4"></img>',
-       icon2='<img src="images/resin/text2.png" height="45.6" width="50.4"></img>',
-       icon3='<img src="images/resin/text3.png" height="45.6" width="50.4"></img>',
-       icon4='<img src="images/resin/text4.png" height="45.6" width="50.4"></img>',
-       icon5='<img src="images/resin/text5.png" height="45.6" width="50.4"></img>',
-       icon6='<img src="images/resin/text6.png" height="45.6" width="50.4"></img>',
-       icon7='<img src="images/resin/text7.png" height="45.6" width="50.4"></img>')
-
-tafla = cbind(type.pdf, abbro, total, icon)
-dimnames(tafla)[2] <- list(haus)
-rownames(tafla) <- NULL
-tafla <- as.data.frame(tafla)
-
-#DT::datatable(tafla, escape = FALSE)
- library(magrittr)
- knitr::kable(
-   tafla,
-   align = 'c',
-   booktabs = T,
-   escape = F,
-   "html"
-   ) %>%
-  kable_styling("striped", full_width = FALSE)
-
-```
-
-???
-Fyrsta plastefnið, Bakelite, var fundið upp um aldamótin 1900 Fenól og formaldehýð hitað og hrært saman við brennisteinssýru til að mynda fenólformaldehýðresín sem er fyrsta plastefnið eða plastresínið.
----
-class: hide-row1-col1 hide-row2-col1 hide-row3-col1 hide-row5-col1 with-thick-border border-white
-
-
-```{r homerss, echo=FALSE, message=FALSE, warning=FALSE,out.width = '100%'}
-mynd <- knitr::include_graphics("images/thompson1930.png")
-mynd
-```
-
----
-class: hide-row1-col1 hide-row2-col1 hide-row3-col1 fade-row4-col1 with-thick-border border-white
-count: false
-
-```{r pubtrend, echo=FALSE, message=FALSE, warning=FALSE, dev.args=list(bg="transparent"), out.width='100%', fig.align='center'}
-
-par(mar=c(4,4,4,2))
-
-roundUpNice <- function(x, nice=c(1,2,4,5,6,8,10)) {
-  if(length(x) != 1) stop("'x' must be of length 1")
-  10^floor(log10(x)) * nice[[which(x <= 10^floor(log10(x)) * nice)[[1]]]]
-} # https://stackoverflow.com/questions/6461209/how-to-round-up-to-the-nearest-10-or-100-or-x
-
-pub.trend <- read.csv("skjol/PubTrend.txt",sep = "\t")
-pub.trend <- pub.trend[,1:2]
-pub.trend <- pub.trend[rev(rownames(pub.trend)),]
-maxtala <- max(pub.trend[,2])
-require(RColorBrewer)
-litir <- colorRampPalette(c('#d75f07','seashell','#069acc'))(dim(pub.trend)[1])
-litir <- rev(litir)
-bp <- barplot(pub.trend[,2],ylab='',xlab='',axes=F,beside=TRUE,ylim=c(0,maxtala*1.1))
-abline(h=seq(0,roundUpNice(1.1*maxtala),roundUpNice(1.1*maxtala)/5), col = 'lightgray', lty = 3)
-barplot(pub.trend[,2], main='Number of Peer Reviewed Articles on Microplastics Each Year ', ylab="Number of Articles", beside=TRUE, axes = F, col=litir ,ylim = c(0,maxtala*1.1),add=T);box()
-axis(2,seq(0,roundUpNice(1.1*maxtala),roundUpNice(1.1*maxtala)/5),labels = seq(0,roundUpNice(1.1*maxtala),roundUpNice(1.1*maxtala)/5),las=2)
-axis(1,bp,pub.trend[,1])
-```
 
 
 ---
 
 layout: true
 class: split-three with-thick-border
-
-.column.bg-main1[.content[
-
-# .indigo[What is microplastic?]
-.nopadding[
-.img-fill[![](images/orplast_science.jpg)]
+.column.bg-main2[.content.center.vmiddle[
+# Pathways
+```{r source, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
+myndb <- knitr::include_graphics("images/ellidaar_saevarhofdi_02.jpg")
+myndb
+```
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Rvk](https://reykjavik.is/frettir/abyrgd-synd-vid-bilathvott-og-medferd-efna)]]
 ]
 ]]
-.column.bg-main2[.content[
-# .orange[Microplastic:] .black[all plastic particles smaller than] 
-# .orange[<span class=" faa-tada animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"> 5 mm</span>]
-<br>
-## .orange[Very slow degradation] .black[in the marine environment]
-<br>
-### .black[Some particles] .red[float] .black[while others] .red[sink] .black[or drift in the ocean layers.]
-### .black[Difficult] .yellow[to see] .black[ and challenging to study.]
+.column.bg-main1[.content.center.vmiddle[
+# Sources
+```{r fjara, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
+myndb <- knitr::include_graphics("images/rusl_fjara_ospar_crop.jpg")
+myndb
+```
+
 ]]
-.column.bg-red[.content[
-.yellow.font-pulp.font2[WHERE DOES MICROPLASTIC COME FROM?]
+
+.column.bg-red[.content.center.vmiddle[
+.yellow.font-pulp.font2[WHERE DO MICROPLASTICS COME FROM?]
 <br>
 .img-fill[![](images/animated_plot.gif)]
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][CJ_Productions](https://www.reddit.com/r/cutouts/comments/3u9prd/travolta_cutout_technically_gif_format_optimized/)]]
+]
 ]]
 
 ???
-Hafið er kalt og dimmt og því ekki góðar aðstæður fyrir niðurbrot.
-Örplast getur borist langar leiðir í höfunum, bæði í yfirborðslögunum og á meira dýpi. Einhver mesti þéttleiki sem hefur fundist í botnseti var á Svalbarða.
+We began to look into the literature for Pathways and sources to see where microplastics might be coming from and how they reach the ocean
 ---
 class: show-100
 
@@ -442,26 +273,21 @@ heiti <- c('Car tires ',
 land <- value-losun
 df <- data.frame(heiti,land,losun)
 df <- df[order(df$heiti),]
-
 library(networkD3)
 nodes <- c(levels(df$heiti), 'Land','Sea')
 nodes <- as.data.frame(nodes)
 names(nodes) <- "name"
-
 a <- list()
 for (i in 1:nrow(df)) {
   a[i] <- list(rbind(matrix(c(df[i,c(2,3)]))))
 }
 b <- do.call(c,a)
 value <- unlist(b)
-
 links <- 
   data.frame(
     source=c(0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10),
     target=c(rep(c(11,12),11)),
     value=value)
-
-
 Sank <- list(nodes, links)
 names(Sank) <- c('nodes', 'links')
 sn <- sankeyNetwork(
@@ -478,7 +304,6 @@ sn <- sankeyNetwork(
 )
 rammi <- widgetframe::frameWidget(sn)
 rammi
-
 ```
 
 ]]]
@@ -531,7 +356,6 @@ class: hide-row2-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-bo
 
 ```{r vegmerkingar, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '60%',fig.show='hold'}
  knitr::include_graphics(c("images/vegmerkingarorplast.png","images/twp.png"))
-
 ```
 
 ???
@@ -544,18 +368,15 @@ class: fade-row1-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-bo
 
 
 ```{r  echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Microplastic release on land and in the ocean"}
-
 slit=c(244,34,22,79) 
 losun=c(106,15,9,34)
 land=slit-losun
-
 library(networkD3)
 A <- c("Small Vehicles ","Delivery Van ","Buses ","Lorrys ","Land ","Ocean ")
 nodes <- as.data.frame(A)
 names(nodes) <- "name"
 #nodes$name <-  as.character(nodes$name)
 links <- data.frame(source=rep(0:3,2),target=rep(4:5, each=4),value=c(land,losun))
-
 Sank <- list(nodes, links)
 names(Sank) <- c('nodes', 'links')
 sn <- sankeyNetwork(
@@ -574,7 +395,6 @@ sn <- sankeyNetwork(
 library(widgetframe)
 rammi <- frameWidget(sn)
 rammi
-
 ```
 
 ???
@@ -591,10 +411,8 @@ litlir <- Batar[Batar$Lengd<15,]
 storir <- Batar[Batar$Lengd>30,]
 adrir <- Batar[!rownames(Batar) %in% c(rownames(litlir),rownames(storir)),]
 Batar$gerd <- ifelse(Batar$Lengd<15, "Small boats",ifelse(Batar$Lengd>15 & Batar$Lengd<30,"Medium boats","Larger ships"))
-
 litura="#cb5600"
 liturb="#28c1ff"
-
 yLab=expression(paste("Hull Area ( ",m^2,")"))
 xLab="Ship Length (m)"
 plot(Batar$Lengd,(Batar$WSA),type='n', ylab = "",xlab="")
@@ -604,7 +422,6 @@ points(litlir$Lengd,(litlir$WSA),col=liturb, pch=18)
 points(adrir$Lengd,(adrir$WSA),col=1)
 points(storir$Lengd,(storir$WSA),col=litura, pch=19)
 legend("topleft",c("Small boats <15m. N=972","Mid sized ships N=75","Larger ships >30m. N=99"),col = c(liturb,1,litura),pch = c(18,1,19),cex=2,bty='n')
-
 # landi <- data.frame(
 #   skr=c(2890,2889,2895,1868,2170,1902,2881,2882,2184),
 #   L = c(54.75,54.75,54.75,56.86,64.55,55.6,80,81,66.96),
@@ -615,7 +432,6 @@ legend("topleft",c("Small boats <15m. N=972","Mid sized ships N=75","Larger ship
 # 
 # landi2 <- Batar[Batar$Skipaskrárnúmer %in% landi$skr,]
 # points(landi2$Lengd,landi2$WSA,pch=13,cex=2,col=2) #Skip HBGranda
-
 par(mar = c(0, 0, 0, 0))
 require(plyr)
 kaka <- ddply(Batar,.(gerd),summarise,Flatarmal=sum(WSA))
@@ -698,17 +514,13 @@ Wood = rowSums(ospar[, substr(colnames(ospar), 1, 4) == "Wood"]),
 Metal = rowSums(ospar[, substr(colnames(ospar), 1, 5) == "Metal"]),
 check.names = FALSE
 )
-
 # if (knitr::is_latex_output()) {
 library(dplyr)
 library(tidyr)
-
 ldf <- df %>% gather(Efni, fjoldi, 3:8)
 plot(factor(ldf$Efni), ldf$fjoldi,ylab="Number of items")
 #rass <- data.frame(ldf$`Dags.(ár-mán-dag)`,ldf$Efni,ldf$fjoldi)
 #colSums(prop.table(t(matrix(rass$ldf.fjoldi,ncol = 18,byrow = T,dimnames = list(c(unique(rass$`Dags.(ár-mán-dag)`),as.character(unique(rass$ldf.Efni))))))))
-
-
 # } else {
 # library(DT)
 # datatable(df[order(df[, 3], decreasing = T), ]) %>%
@@ -721,8 +533,6 @@ plot(factor(ldf$Efni), ldf$fjoldi,ylab="Number of items")
 # )
 #
 # }
-
-
 ```
 
 
@@ -746,10 +556,23 @@ class: bg-main1
 
 # Thanks for listening!
 .font2[
-*  .yellow[The report] can be attained here [`r anicon::faa('external-link-alt', animate='float', rtext='MP report')`](https://harkanatta.github.io/orplastskyrslaUAR/) (*in Icelandic*)
-* .yellow[The Github repo] is here [`r anicon::faa("github", animate="vertical")`](https://github.com/harkanatta/orplastskyrslaUAR) 
+*  .yellow[The report] can be attained here [`r icon::octicons$share`](https://harkanatta.github.io/orplastskyrslaUAR/) (*in Icelandic*)
+* .yellow[The Github repo] is here [`r icon::simple_icons$github`](https://github.com/harkanatta/orplastskyrslaUAR) 
 
 * This presentation was made with the R Package [Xaringan](https://github.com/yihui/xaringan) after a [template](https://emitanaka.org/ninja-theme/themes/kunoichi/kunoichi-theme-example.html) by Emi Tanaka
 * This project was made for [The ministry for the environment and natural resources](https://www.government.is/ministries/ministry-for-the-environment-and-natural-resources/)
 ] 
-<img src="images/UAR_IS - Copy (1).svg" height="20%" align="left" />
+
+<!-- <div class="image123"> -->
+<!--     <div class="imgContainer"> -->
+<!--         <img src="images/nnvlogo.png" width="120%"  /> -->
+<!--     </div> -->
+<!--     <div class="imgContainer"> -->
+<!--         <img src="images/UAR_IS - Copy (1).svg" /> -->
+<!--     </div> -->
+<!--     <div class="imgContainer"> -->
+<!--         <img src="images/zeropoint_logo.png" width="32%" /> -->
+<!--     </div> -->
+<!-- </div> -->
+
+
