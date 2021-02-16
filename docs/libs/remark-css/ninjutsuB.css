@@ -1370,3 +1370,19 @@
   text-decoration: line-through;
   color: grey;
 }
+
+.footer-note {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 200px;
+    height: 25px;
+}
+
+.footer-note-R {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 200px;
+    height: 25px;
+}

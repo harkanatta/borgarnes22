@@ -15,3 +15,6 @@ knitr
 forcats
 hexSticker
 icon
+mapview
+sf
+leaflet

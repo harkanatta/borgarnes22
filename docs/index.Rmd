@@ -29,9 +29,13 @@ background-image: url("https://thumbs.gfycat.com/PersonalInfantileCuckoo-size_re
 background-size: 100%
 .content.vmiddle[
 .center[
-# .white[Main Sources and Pathways of Microplastics]
-## .white[in Iceland]
-### Made by BioPol for the Environmental Ministry
+# .yellow[Main Sources and Pathways of Microplastics]
+## .yellow[in Icelandic Oceans]
+### .white[Made for the Environmental Ministry of Iceland] ![](images/skjldr.svg)
+
+## ![](images/Biopol_logo_small.jpg) ![](images/nnvlogo.png)
+
+
 ]]
 
 .bottom_abs[.footer-note[.tiny[.green[Image Credit: ][tactical_hog](https://gfycat.com/personalinfantilecuckoo)]]
@@ -40,19 +44,14 @@ background-size: 100%
 layout: false
 class: split-two with-thick-border border-cyan
 .column.bg-main1[
-  .split-two[
+.split-two[
 .row.bg-main1[.content.vmiddle[
 .center[
 .nopadding[
 .img-fill[![](https://raw.githubusercontent.com/harkanatta/innragrunn/master/docs/images/biopol_synataka.jpg)]
 ]]]]
 .row.bg-main1[
-.bottom_abs[
-```{r logo, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '25%'}
-mynd <- knitr::include_graphics("images/biopol_logo.jpg")
-mynd
-```
-]
+
 .content.vmiddle[.center[
 .nopadding[
 .img-fill[![](images/biopol_karin.jpg)]
@@ -72,8 +71,8 @@ mynd
 
 .content.vmiddle[
 .center[
- ## Microplastic .orange[Sampling `r icon::octicons$beaker`] and 
- ## .yellow[Analyzing `r icon::octicons$graph`]
+ ## ![](images/Biopol_logo_small.jpg) and ![](images/nnvlogo.png) Microplastic research:
+ ## .orange[Sampling `r icon::octicons$beaker`] and .yellow[Analyzing `r icon::octicons$graph`]
  ## Desktop studies and Reports `r icon::octicons$device_desktop`
 
 ]]]]]
@@ -88,23 +87,6 @@ Takið eftir kaðlinum
 
 layout: true
 class: split-three with-thick-border
-.column.bg-main2[.content.center.vmiddle[
-# Pathways
-```{r source, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
-myndb <- knitr::include_graphics("images/ellidaar_saevarhofdi_02.jpg")
-myndb
-```
-.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Rvk](https://reykjavik.is/frettir/abyrgd-synd-vid-bilathvott-og-medferd-efna)]]
-]
-]]
-.column.bg-main1[.content.center.vmiddle[
-# Sources
-```{r fjara, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
-myndb <- knitr::include_graphics("images/rusl_fjara_ospar_crop.jpg")
-myndb
-```
-
-]]
 
 .column.bg-red[.content.center.vmiddle[
 .yellow.font-pulp.font2[WHERE DO MICROPLASTICS COME FROM?]
@@ -114,8 +96,31 @@ myndb
 ]
 ]]
 
+
+.column.bg-main1[.content.center.vmiddle[
+# Sources
+```{r fjara, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
+myndb <- knitr::include_graphics("images/rusl_fjara_ospar_crop.jpg")
+myndb
+```
+]]
+
+
+.column.bg-main2[.content.center.vmiddle[
+# Pathways
+```{r source, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
+myndb <- knitr::include_graphics("images/ellidaar_saevarhofdi_02.jpg")
+myndb
+```
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Rvk](https://reykjavik.is/frettir/abyrgd-synd-vid-bilathvott-og-medferd-efna)]]
+]
+]]
+
+
 ???
-We began to look into the literature for Pathways and sources to see where microplastics might be coming from and how they reach the ocean
+We began to look into the literature for Pathways and sources to see where microplastics might be coming from and how they reach the ocean. 
+There are many different sources of MP's that are important depending on the pathway they travel to the ocean
+
 ---
 class: show-100
 
@@ -136,93 +141,22 @@ Við höfum ekki ennþá sammælst um standard aðferðir við að greina örpla
 ---
 
 layout: false
-class: split-33
+class: split-three 
 
-.column.bg-main3[.content.vmiddle.right[
-.white[
-# Main Sources
-]
- .font-mono.font2[
- .red[Tirewear Particles]<br>
- .amber[Road Paint]<br>
- .red[House Paint]<br>
- .amber[Artificial Turf and Playgrounds]<br>
- .red[Laundry]<br>
- .amber[Cosmetics]<br>
- .red[Fishing Gear]<br>
- .amber[Plastic Waste on the Coastline]
-]]]
-.column[.content[
-.center[
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="85%"}
-knitr::include_graphics("images/samansetning.png")
+.row.bg-white[.content.vmiddle.center.nopadding[
+.fig90[![](images/map.png)]
+]]
+
+.row.bg-white[.content.vmiddle.center[
+.img-cover[![](images/ALTA.png)]
+]]
+
+.row.bg-white[.content[
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.height='100%'}
+knitr::include_graphics("images/map.png")
 ```
-
-]]]
-
-
-
-???
-Fishing gear needs closer attention
-Veiðarfæri þarf að rannsaka betur. Sum veiðarfæri trosna við notkun og losnar nælon ofl. örplast þannig beint í hafið. Þetta er ekki flókinn iðnaður þá að hann sé stórtækur og því ætti að vera hægt að fylgjast betur með því hve mikið af veiðarfærum er í umferð
-Fjörurnar eru eins og verksmiðjur sem mala örplast úr stærra plastrusli
-
-Samsett mynd:
-https://www.abc.net.au/news/2019-09-26/delicate-washing-cycle-releases-microplastics/11551356
-...ofl.
----
-
-layout: false
-class: split-33
-
-.column.bg-main3[.content.vmiddle.center[
-.white[
-# Main Pathways
-]
 ]]
-.column[.content.vmiddle.center[
-.center[
-.img-contain[![](images/ALTA.png)]
-.img-fill[![](images/runoff.jpeg)]
-]]]
 
-
-???
-In urban areas more runoff-water flows through the sewage
----
-
-layout: false
-class: split-33
-
-.column.bg-main3[.content.vmiddle.center[
-.white[
-# Main Pathways
-]
-]]
-.column[.content.vmiddle.center[
-.center[
-.img-contain[![](images/ALTA.png)]
-.img-fill[![](images/ellidaar_saevarhofdi_02.jpg)]
-]]]
-
-
-???
-In urban areas more runoff-water flows through the sewage
----
-
-layout: false
-class: split-33
-
-.column.bg-main3[.content.vmiddle.center[
-.white[
-# Main Pathways
-]
-]]
-.column[.content.vmiddle.center[
-.center[
-.img-contain[![](images/ALTA.png)]
-.img-cover[![](images/map.png))]
-]]]
 
 
 ???
@@ -238,9 +172,70 @@ Hafið er kalt og dimmt og því ekki góðar aðstæður fyrir niðurbrot.
 [Mynd](https://reykjavik.is/sites/default/files/styles/frettamynd/public/myndir_frettir/frettamyndir_2014_febjuli/ellidaar_saevarhofdi_02.jpg?itok=Sq0ZT5d3)
 
 Mynd birt með góðfúslegu leyfi Alta
+
+
 ---
 
+layout: false
+class: split-33
 
+# Traffic
+
+.column.bg-white[
+# Main Pathways
+.nopadding[
+.row[
+.img-cover[![](images/map.png)]
+]]
+.nopadding[
+.row[
+.fig90[![](images/map.png)]
+]]
+]
+
+.column.bg-main1[
+.img-cover[![](images/trafficDensity.png)]
+]
+
+---
+layout: false
+class: split-33
+
+.column.bg-main4[
+.content.vmiddle.right[
+.black[
+# Main Sources of MP's
+categories
+]
+ .font-soon[
+ .red[Tirewear Particles]<br>
+ .black[Road Paint]<br>
+ .red[House Paint]<br>
+ .black[Artificial Turf and Playgrounds]<br>
+ .red[Laundry]<br>
+ .black[Cosmetics]<br>
+ .red[Fishing Gear]<br>
+ .black[Plastic Waste on the Coastline]
+]]]
+.column.content.center[
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="85%"}
+knitr::include_graphics("images/samansetning.png")
+```
+
+]
+
+
+
+???
+Fishing gear needs closer attention
+Veiðarfæri þarf að rannsaka betur. Sum veiðarfæri trosna við notkun og losnar nælon ofl. örplast þannig beint í hafið. Þetta er ekki flókinn iðnaður þá að hann sé stórtækur og því ætti að vera hægt að fylgjast betur með því hve mikið af veiðarfærum er í umferð
+Fjörurnar eru eins og verksmiðjur sem mala örplast úr stærra plastrusli
+
+Samsett mynd:
+https://www.abc.net.au/news/2019-09-26/delicate-washing-cycle-releases-microplastics/11551356
+...ofl.
+
+---
 
 layout: false
 class: split-33
@@ -250,44 +245,22 @@ class: split-33
 # Main Sources of Microplastics
 <br>
 <br>
-.font-mono[Estimates in tonnes]
+.font-mono[Estimates in tonnes per year]
 ]]]
-.column[.content[
-.center[
-```{r echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, out.height="100%"}
+
+.column[.content.vmiddle.center[
+
+```{r SankBig, echo=FALSE, message=FALSE, warning=FALSE, out.width='100%', fig.cap="Microplastic release on land and in the ocean"}
 #losun <- (l+h)/2 #Meðaltal lægra og hærra mats á losun.
-value <- c(371, 41, 26, 33.2, 60, 3, 0.2, 8.2, 0.34, 1, 0.002) #Uppspretta lægra mat
-losun <- c(164, 5.7,  0, 15.2, 3.2, 0.3, 0, 8.2, 0.34, 0, 0.002) #losun lægra mat
-#value <- c(379,586,38,233,21,48,3,11,8,32,0.3,3)
-heiti <- c('Car tires ',
-          'Road paint ',
-          'Airplane tires ',
-          'House paint ',
-          'Ship paint ',
-          'Artificial turf ',
-          'Playgrounds ',
-          'Laundry ',
-          'Cosmetics ',
-          'Hail shots ',
-          'Landfill leachates ')
-land <- value-losun
-df <- data.frame(heiti,land,losun)
-df <- df[order(df$heiti),]
+slit=c(371, 41, 26, 33.2, 60, 3, 0.2, 8.2, 0.34, 1, 0.002)
+losun= c(164, 5.7,  0, 15.2, 3.2, 0.3, 0, 8.2, 0.34, 0, 0.002)
+land=slit-losun
 library(networkD3)
-nodes <- c(levels(df$heiti), 'Land','Sea')
-nodes <- as.data.frame(nodes)
+A <-  c("Car tires ","Road paint ","Airplane tires ","House paint ","Ship paint ","Artificial turf ","Playgrounds ","Laundry ","Cosmetics ","Hail shots ","Landfill leachates ","Land ","Ocean ")
+nodes <- as.data.frame(A)
 names(nodes) <- "name"
-a <- list()
-for (i in 1:nrow(df)) {
-  a[i] <- list(rbind(matrix(c(df[i,c(2,3)]))))
-}
-b <- do.call(c,a)
-value <- unlist(b)
-links <- 
-  data.frame(
-    source=c(0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10),
-    target=c(rep(c(11,12),11)),
-    value=value)
+#nodes$name <-  as.character(nodes$name)
+links <- data.frame(source=rep(0:10,2),target=rep(11:12, each=11),value=c(land,losun))
 Sank <- list(nodes, links)
 names(Sank) <- c('nodes', 'links')
 sn <- sankeyNetwork(
@@ -299,14 +272,16 @@ sn <- sankeyNetwork(
   NodeID = "name",
   units = "tonn",
   colourScale = JS("d3.scaleOrdinal(d3.schemeCategory20);"),
-  fontSize = 20,
-  nodeWidth = 30, height = "681px", fontFamily = "Monospace"
+  fontSize = 28,
+  nodeWidth = 30, width = "681px", height = "678", fontFamily = "Courier"
 )
-rammi <- widgetframe::frameWidget(sn)
+#sn
+library(widgetframe)
+rammi <- frameWidget(sn)
 rammi
 ```
 
-]]]
+]]
 
 ???
 fig.cap='Helstu uppsprettur örplasts á Íslandi og skipting þess eftir farleiðum í haf eða í jarðveg. Byggt á lægra mati.',
@@ -367,7 +342,7 @@ Stærsta uppspretta örplasts í umhverfinu á Íslandi, sem lagt var mat á, er
 class: fade-row1-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
 
 
-```{r  echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Microplastic release on land and in the ocean"}
+```{r SankSmall,  echo=FALSE, message=FALSE, warning=FALSE, out.width='100%', fig.cap="Microplastic release on land and in the ocean"}
 slit=c(244,34,22,79) 
 losun=c(106,15,9,34)
 land=slit-losun
@@ -389,7 +364,7 @@ sn <- sankeyNetwork(
   units = "tonn",
   colourScale = JS("d3.scaleOrdinal(d3.schemeCategory20);"),
   fontSize = 28,
-  nodeWidth = 30, width = "500px", height = "500px", fontFamily = "Courier"
+  nodeWidth = 30, width = "500px", height = "678px", fontFamily = "Courier"
 )
 #sn
 library(widgetframe)
@@ -549,7 +524,51 @@ Orkumikil kerfi sem virka eins og myllur fyrir örplast
 
 Losun örplasts fer eftir því hvernig veiðarfæri um ræðir en sum þeirra slitna og missa þræði við notkun í mismiklum mæli. Aðrar gerðir veiðarfæra líkt og grásleppunet og handfæralínur slitna ekki með þeim hætti. Í sænskri rannsókn var losun örplasts metin 1-10% af heildarþyngd veiðarfæra
 Minnast á sjókvíaeldi
+
+
+
 ---
+
+
+
+layout: false
+class: split-33
+
+.column.bg-main3[.content.vmiddle.center[
+.white[
+# Main Pathways
+]
+]]
+.column[.content.vmiddle.center[
+.center[
+.img-contain[![](images/ALTA.png)]
+.img-fill[![](images/runoff.jpeg)]
+]]]
+
+
+???
+In urban areas more runoff-water flows through the sewage
+---
+
+layout: false
+class: split-33
+
+.column.bg-main3[.content.vmiddle.center[
+.white[
+# Main Pathways
+]
+]]
+.column[.content.vmiddle.center[
+.center[
+.img-contain[![](images/ALTA.png)]
+.img-fill[![](images/ellidaar_saevarhofdi_02.jpg)]
+]]]
+
+
+???
+In urban areas more runoff-water flows through the sewage
+---
+
 
 layout: false
 class: bg-main1 
