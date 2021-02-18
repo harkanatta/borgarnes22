@@ -13,6 +13,7 @@ date: "<br><br>2019-09-05, updated: `r format(Sys.time(), '%e. %B %Y')`"
 lang: is
 output:
   xaringan::moon_reader:
+    seal: false
     lib_dir: libs
     css: ["kunoichiB", "ninjutsuB" , "assets/ninpo.css"]
     self_contained: false
@@ -23,236 +24,66 @@ output:
       countIncrementalSlides: false
 
 ---
+class: center, top
+background-image: url("images/blandabru.jpg")
+background-size: 100%
+.content.vmiddle[
+.center[
+# .yellow[Main Sources and Pathways of Microplastics]
+## .yellow[in Icelandic Oceans]
+### .white[Made for the Environmental Ministry of Iceland] ![](images/skjldr.svg)
+
+## ![](images/Biopol_logo_small.jpg) ![](images/nnvlogo.png)
+
+
+]]
+
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][tactical_hog](https://gfycat.com/personalinfantilecuckoo)]]
+]
+
+???
+<!-- background-image: url("https://thumbs.gfycat.com/PersonalInfantileCuckoo-size_restricted.gif") -->
+---
 layout: false
 class: split-two with-thick-border border-cyan
-.column.bg-white[
-  .split-two[
-.row.bg-white[.content.vmiddle[.center[
-  .nopadding[
+.column.bg-main1[
+.split-two[
+.row.bg-main1[.content.vmiddle[
+.center[
+.nopadding[
 .img-fill[![](https://raw.githubusercontent.com/harkanatta/innragrunn/master/docs/images/biopol_synataka.jpg)]
-]
-  ]]]
-  .row.bg-white[.content.vmiddle[.center[
-  .nopadding[
+]]]]
+.row.bg-main1[
+
+.content.vmiddle[.center[
+.nopadding[
 .img-fill[![](images/biopol_karin.jpg)]
-]
-  ]]]
-]]
+]]]]]]
 
-.column.bg-main1[.content.center.vmiddle[
-# Microplastic Sampling
-# .deep-orange[Skagaströnd] 
-## .white[<span class=" faa-pulse animated-hover " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"> [skʰaːɣastrœn̥d] </span>]
-<br><br>
-
-```{r logo, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '50%'}
-mynd <- knitr::include_graphics("images/zeropoint_logo.jpg")
+.column.bg-main1[
+  .split-two[
+.row.bg-main1[.content.vmiddle[
+.center[
+.nopadding[
+```{r dori, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
+mynd <- knitr::include_graphics("images/dorimugg.jpg")
 mynd
 ```
+]]]]
+.row.bg-main1[
 
-]]
+.content.vmiddle[
+.center[
+ ## ![](images/Biopol_logo_small.jpg) and ![](images/nnvlogo.png) Microplastic research:
+ ## .orange[Sampling `r icon::octicons$beaker`] and .yellow[Analyzing `r icon::octicons$graph`]
+ ## Desktop studies and Reports `r icon::octicons$device_desktop`
+
+]]]]]
+
 
 ???
+Why us?/How this project came to me
 Takið eftir kaðlinum
-
----
-
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
-
-layout: true
-class: split-two with-border border-white
-
-.column.bg-main3[.content[
-  .split-five[
- .row.bg-main1[.content.center.vmiddle[
-.font-dance.font3.black[Plastic is everywhere]
- ]]
-  .row.bg-main2[.content.center[ It is made with <br>
-.font-perm.font3[<span class=" faa-pulse animated faa-fast" style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"> Chemistry!!]
- ]]
-  .row.bg-main4[.split-two.content[
-```{r wlogo, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '5%'}
-mynd <- knitr::include_graphics("images/wikilogo.png")
-mynd
-```
-.font-mono[The International Resin Identification Coding System (RIC) is a set of symbols that identify the plastic resin out of which products are made]
- ]]
-  .row.bg-main2[.content.vmiddle[
-## The term .red[microplastic] was coined in 2004 by Richard C. Thompson
- ]]
-   .row.bg-main1[.content.center[
-## Published international science articles about microplastics in growing numbers ever since.
- ]]
- ]
-]]
-
-.column.bg-white[.content.center.vmiddle[
-{{content}}
-]]
-
-???
-Define the layout and for sequence hide the appropriate cell.
-
----
-
-class: hide-row2-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-
-```{r stortplast, echo=FALSE, message=FALSE, warning=FALSE,out.width = '100%'}
- knitr::include_graphics("images/everywhere.jpg")
-```
-https://www.plasticstoday.com/
-???
-https://www.plasticstoday.com/sites/default/files/globe-plastic-bag-IRINA-Adobe-300.jpg
-
-Plast er samofið öllum kimum samfélagsins. Það er órjúfanlegur þáttur í heilsukerfinu og það léttir faratæki í lofti, á landi og láði. 
-
-
----
-
-class: hide-row1-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-
-
-```{r bakelite, echo=FALSE, message=FALSE, warning=FALSE, out.width='75%'}
-knitr::include_graphics("https://thumbs.gfycat.com/BaggyWarlikeAmericancrow-size_restricted.gif")
-```
-
-```{r styrene-b, echo=FALSE, message=FALSE, warning=FALSE, out.width='75%'}
-knitr::include_graphics("images/bakelite.png")
-```
-
-
-???
-https://www.youtube.com/watch?v=BCNWav12PdI
-
-I don't know anything about chemistry but this is to show how the first plasticresin is made from liquid materials (phenol, formaldehyde and sulfuric acid) wich led to bakelite
-
-Plastic is made with polymerisation of oil-derived materials
-
-Fyrsta plastefnið, Bakelite, var fundið upp um aldamótin 1900 Fenól og formaldehýð hitað og hrært saman við brennisteinssýru til að mynda fenólformaldehýðresín sem er fyrsta plastefnið eða plastresínið.
----
-
-class: hide-row1-col1 hide-row2-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-
-
-
-
-```{r framleidsla, echo=FALSE, message=FALSE, warning=FALSE, out.width='100%'}
-library(kableExtra)
-haus <- c('Plastic Type','Abbreviation','World Production', 'Resin Code (RIC)')#,'Einliða resíns')
-
-type = c(
-  'Polyethylene terephthalate',
-  'Polyethylene - density > 0,94 g/cm^3^',
-  'Polyvinyl chloride',
-  'Polyethylene - density < 0,94 g/cm^3^',
-  'Polypropylene',
-  'Polystyrene',
-  'Other'
-)
-
-type.pdf = c(
-  'Polyethylene terephthalate',
-  'Polyethylene - High density',
-  'Polyvinyl chloride',
-  'Polyethylene - Low densityd',
-  'Polypropylene',
-  'Polystyrene',
-  'Other'
-)
-
-abbro= c(
-  'PET, PETE',
-  'HD-PE, PE-HD',
-  'PVC',
-  'LDPE, PE-LD',
-  'PP',
-  'PS',
-  ''
-)
-
-total=c(
-  '7%',
-  '15%',
-  '16%',
-  '17%',
-  '23%',
-  '7%',
-  '15%'
-)
-# icon=c(icon1="![](myndir/resin/text1.png)",
-#        icon2="![](myndir/resin/text2.png)",
-#        icon3="![](myndir/resin/text3.png)",
-#        icon4="![](myndir/resin/text4.png)",
-#        icon5="![](myndir/resin/text5.png)",
-#        icon6="![](myndir/resin/text6.png)",
-#        icon7="![](myndir/resin/text7.png)")
-
-
-icon=c(icon1='<img src="images/resin/text1.png" height="45.6" width="50.4"></img>',
-       icon2='<img src="images/resin/text2.png" height="45.6" width="50.4"></img>',
-       icon3='<img src="images/resin/text3.png" height="45.6" width="50.4"></img>',
-       icon4='<img src="images/resin/text4.png" height="45.6" width="50.4"></img>',
-       icon5='<img src="images/resin/text5.png" height="45.6" width="50.4"></img>',
-       icon6='<img src="images/resin/text6.png" height="45.6" width="50.4"></img>',
-       icon7='<img src="images/resin/text7.png" height="45.6" width="50.4"></img>')
-
-tafla = cbind(type.pdf, abbro, total, icon)
-dimnames(tafla)[2] <- list(haus)
-rownames(tafla) <- NULL
-tafla <- as.data.frame(tafla)
-
-#DT::datatable(tafla, escape = FALSE)
- library(magrittr)
- knitr::kable(
-   tafla,
-   align = 'c',
-   booktabs = T,
-   escape = F,
-   "html"
-   ) %>%
-  kable_styling("striped", full_width = FALSE)
-
-```
-
-???
-Fyrsta plastefnið, Bakelite, var fundið upp um aldamótin 1900 Fenól og formaldehýð hitað og hrært saman við brennisteinssýru til að mynda fenólformaldehýðresín sem er fyrsta plastefnið eða plastresínið.
----
-class: hide-row1-col1 hide-row2-col1 hide-row3-col1 hide-row5-col1 with-thick-border border-white
-
-
-```{r homerss, echo=FALSE, message=FALSE, warning=FALSE,out.width = '100%'}
-mynd <- knitr::include_graphics("images/thompson1930.png")
-mynd
-```
-
----
-class: hide-row1-col1 hide-row2-col1 hide-row3-col1 fade-row4-col1 with-thick-border border-white
-count: false
-
-```{r pubtrend, echo=FALSE, message=FALSE, warning=FALSE, dev.args=list(bg="transparent"), out.width='100%', fig.align='center'}
-
-par(mar=c(4,4,4,2))
-
-roundUpNice <- function(x, nice=c(1,2,4,5,6,8,10)) {
-  if(length(x) != 1) stop("'x' must be of length 1")
-  10^floor(log10(x)) * nice[[which(x <= 10^floor(log10(x)) * nice)[[1]]]]
-} # https://stackoverflow.com/questions/6461209/how-to-round-up-to-the-nearest-10-or-100-or-x
-
-pub.trend <- read.csv("skjol/PubTrend.txt",sep = "\t")
-pub.trend <- pub.trend[,1:2]
-pub.trend <- pub.trend[rev(rownames(pub.trend)),]
-maxtala <- max(pub.trend[,2])
-require(RColorBrewer)
-litir <- colorRampPalette(c('#d75f07','seashell','#069acc'))(dim(pub.trend)[1])
-litir <- rev(litir)
-bp <- barplot(pub.trend[,2],ylab='',xlab='',axes=F,beside=TRUE,ylim=c(0,maxtala*1.1))
-abline(h=seq(0,roundUpNice(1.1*maxtala),roundUpNice(1.1*maxtala)/5), col = 'lightgray', lty = 3)
-barplot(pub.trend[,2], main='Number of Peer Reviewed Articles on Microplastics Each Year ', ylab="Number of Articles", beside=TRUE, axes = F, col=litir ,ylim = c(0,maxtala*1.1),add=T);box()
-axis(2,seq(0,roundUpNice(1.1*maxtala),roundUpNice(1.1*maxtala)/5),labels = seq(0,roundUpNice(1.1*maxtala),roundUpNice(1.1*maxtala)/5),las=2)
-axis(1,bp,pub.trend[,1])
-```
 
 
 ---
@@ -260,31 +91,39 @@ axis(1,bp,pub.trend[,1])
 layout: true
 class: split-three with-thick-border
 
-.column.bg-main1[.content[
-
-# .indigo[What is microplastic?]
-.nopadding[
-.img-fill[![](images/orplast_science.jpg)]
-]
-]]
-.column.bg-main2[.content[
-# .orange[Microplastic:] .black[all plastic particles smaller than] 
-# .orange[<span class=" faa-tada animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"> 5 mm</span>]
-<br>
-## .orange[Very slow degradation] .black[in the marine environment]
-<br>
-### .black[Some particles] .red[float] .black[while others] .red[sink] .black[or drift in the ocean layers.]
-### .black[Difficult] .yellow[to see] .black[ and challenging to study.]
-]]
-.column.bg-red[.content[
-.yellow.font-pulp.font2[WHERE DOES MICROPLASTIC COME FROM?]
+.column.bg-red[.content.center.vmiddle[
+.yellow.font-pulp.font2[WHERE DO MICROPLASTICS COME FROM?]
 <br>
 .img-fill[![](images/animated_plot.gif)]
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][CJ_Productions](https://www.reddit.com/r/cutouts/comments/3u9prd/travolta_cutout_technically_gif_format_optimized/)]]
+]
 ]]
 
+
+.column.bg-main1[.content.center.vmiddle[
+# Many Sources
+```{r fjara, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
+myndb <- knitr::include_graphics("images/rusl_fjara_ospar_crop.jpg")
+myndb
+```
+]]
+
+
+.column.bg-main2[.content.center.vmiddle[
+# Few Main Pathways
+```{r source, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
+myndb <- knitr::include_graphics("images/ellidaar_saevarhofdi_02.jpg")
+myndb
+```
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Rvk](https://reykjavik.is/frettir/abyrgd-synd-vid-bilathvott-og-medferd-efna)]]
+]
+]]
+
+
 ???
-Hafið er kalt og dimmt og því ekki góðar aðstæður fyrir niðurbrot.
-Örplast getur borist langar leiðir í höfunum, bæði í yfirborðslögunum og á meira dýpi. Einhver mesti þéttleiki sem hefur fundist í botnseti var á Svalbarða.
+We began to look into the literature for Pathways and sources to see where microplastics might be coming from and how they reach the ocean. 
+There are many different sources of MP's that are important depending on the pathway they travel to the ocean
+
 ---
 class: show-100
 
@@ -302,32 +141,34 @@ count: false
 Erfitt að sjá og vandasamt að rannsaka. Við hjá Biopol fengum að kynnast því :)
 Við höfum ekki ennþá sammælst um standard aðferðir við að greina örplast
 
+
 ---
 
 layout: false
 class: split-33
 
-.column.bg-main3[.content.vmiddle.right[
-.white[
-# Main Sources
+.column.bg-main4[
+.content.vmiddle.right[
+.black[
+# Main Sources of MP's
+categories
 ]
- .font-mono.font2[
+ .font-soon[
  .red[Tirewear Particles]<br>
- .amber[Road Paint]<br>
+ .black[Road Paint]<br>
  .red[House Paint]<br>
- .amber[Artificial Turf and Playgrounds]<br>
+ .black[Artificial Turf and Playgrounds]<br>
  .red[Laundry]<br>
- .amber[Cosmetics]<br>
+ .black[Cosmetics]<br>
  .red[Fishing Gear]<br>
- .amber[Plastic Waste on the Coastline]
+ .black[Plastic Waste on the Coastline]
 ]]]
-.column[.content[
-.center[
+.column.content.center[
 ```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="85%"}
 knitr::include_graphics("images/samansetning.png")
 ```
 
-]]]
+]
 
 
 
@@ -339,223 +180,33 @@ Fjörurnar eru eins og verksmiðjur sem mala örplast úr stærra plastrusli
 Samsett mynd:
 https://www.abc.net.au/news/2019-09-26/delicate-washing-cycle-releases-microplastics/11551356
 ...ofl.
+
 ---
-
-layout: false
-class: split-33
-
-.column.bg-main3[.content.vmiddle.center[
-.white[
-# Main Pathways
-]
-]]
-.column[.content.vmiddle.center[
-.center[
-.img-contain[![](images/ALTA.png)]
-.img-fill[![](images/runoff.jpeg)]
-]]]
-
-
-???
-In urban areas more runoff-water flows through the sewage
----
-
-layout: false
-class: split-33
-
-.column.bg-main3[.content.vmiddle.center[
-.white[
-# Main Pathways
-]
-]]
-.column[.content.vmiddle.center[
-.center[
-.img-contain[![](images/ALTA.png)]
-.img-fill[![](images/ellidaar_saevarhofdi_02.jpg)]
-]]]
-
-
-???
-In urban areas more runoff-water flows through the sewage
----
-
-layout: false
-class: split-33
-
-.column.bg-main3[.content.vmiddle.center[
-.white[
-# Main Pathways
-]
-]]
-.column[.content.vmiddle.center[
-.center[
-.img-contain[![](images/ALTA.png)]
-.img-cover[![](images/map.png))]
-]]]
-
-
-???
-In urban areas more runoff-water flows through the sewage
-
-Hafið er kalt og dimmt og því ekki góðar aðstæður fyrir niðurbrot.
-Örplast getur borist langar leiðir í höfunum, bæði í yfirborðslögunum og á meira dýpi. Einhver mesti þéttleiki sem hefur fundist í botnseti var á Svalbarða.
-
-Í dreifbýli rennur ofanvatn að mestu í jarðveg. .orange[Helstu farleiðir] örplasts á Íslandi eru í þéttbýli, þar sem það berst með ofanvatni í fráveitukerfin og þaðan til hafs.
-
-Á suðvesturhorni landsins er vatnasvæði sem rennur í Faxaflóa (sjá mynd 3.1). Á því svæði býr yfir 3/4 hlutar landsmanna3 og þar er summa árdagsumferðar rúmir 3/4 hlutar á landsvísu. Flatarmál bygginga þar er yfir 50% flatarmáls allra bygginga á landsvísu74 en flatarmál málaðra flata eflaust enn meiri vegna byggingarhæðar. Flestir landsmenn fara til Reykjavíkur reglulega til að sækja þjónustu sem þar er í boði, nær allir vöruflutningar eru um svæðið og nærri allt millilandaflug. Þrír stórir slippir af fjórum eru á Höfuðborgarsvæðinu og í Grindavík. Það er því rík ástæða til að skoða þetta svæði betur.
-
-[Mynd](https://reykjavik.is/sites/default/files/styles/frettamynd/public/myndir_frettir/frettamyndir_2014_febjuli/ellidaar_saevarhofdi_02.jpg?itok=Sq0ZT5d3)
-
-Mynd birt með góðfúslegu leyfi Alta
----
-
-
 
 layout: false
 class: split-33
 
 .column.bg-main2[.content.vmiddle[
 .center[
-# Main Sources of Microplastics
+# Estimates of the Main Sources of Microplastics
 <br>
 <br>
-.font-mono[Estimates in tonnes]
+.font-mono[Tonnes per year]
 ]]]
-.column[.content[
-.center[
-```{r echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, out.height="100%"}
+
+.column[.content.vmiddle.center[
+
+```{r SankBig, echo=FALSE, message=FALSE, warning=FALSE, out.width='100%', fig.cap="Microplastic release on land and in the ocean"}
 #losun <- (l+h)/2 #Meðaltal lægra og hærra mats á losun.
-value <- c(371, 41, 26, 33.2, 60, 3, 0.2, 8.2, 0.34, 1, 0.002) #Uppspretta lægra mat
-losun <- c(164, 5.7,  0, 15.2, 3.2, 0.3, 0, 8.2, 0.34, 0, 0.002) #losun lægra mat
-#value <- c(379,586,38,233,21,48,3,11,8,32,0.3,3)
-heiti <- c('Car tires ',
-          'Road paint ',
-          'Airplane tires ',
-          'House paint ',
-          'Ship paint ',
-          'Artificial turf ',
-          'Playgrounds ',
-          'Laundry ',
-          'Cosmetics ',
-          'Hail shots ',
-          'Landfill leachates ')
-land <- value-losun
-df <- data.frame(heiti,land,losun)
-df <- df[order(df$heiti),]
-
-library(networkD3)
-nodes <- c(levels(df$heiti), 'Land','Sea')
-nodes <- as.data.frame(nodes)
-names(nodes) <- "name"
-
-a <- list()
-for (i in 1:nrow(df)) {
-  a[i] <- list(rbind(matrix(c(df[i,c(2,3)]))))
-}
-b <- do.call(c,a)
-value <- unlist(b)
-
-links <- 
-  data.frame(
-    source=c(0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10),
-    target=c(rep(c(11,12),11)),
-    value=value)
-
-
-Sank <- list(nodes, links)
-names(Sank) <- c('nodes', 'links')
-sn <- sankeyNetwork(
-  Links = Sank$links,
-  Nodes = Sank$nodes,
-  Source = "source",
-  Target = "target",
-  Value = "value",
-  NodeID = "name",
-  units = "tonn",
-  colourScale = JS("d3.scaleOrdinal(d3.schemeCategory20);"),
-  fontSize = 20,
-  nodeWidth = 30, height = "681px", fontFamily = "Monospace"
-)
-rammi <- widgetframe::frameWidget(sn)
-rammi
-
-```
-
-]]]
-
-???
-fig.cap='Helstu uppsprettur örplasts á Íslandi og skipting þess eftir farleiðum í haf eða í jarðveg. Byggt á lægra mati.',
-Dekkjakurl berst til hafs í gegnum ræsi í þéttbýli en festist að mestu í jarðveginum við vegina. Stærsta uppspretta örplasts í umhverfinu á Íslandi, sem lagt var mat á, er tengd bifreiðaumferð. Slit á dekkjum og vegmerkingum er um 60-85% örplastslosunar á Íslandi.
-Vegmerkingar berast með sömu leiðum til hafs
-Útimálning berst einnig með affallsvatni gegnum ræsi en innimálningu er gjarnan hellt beint í niðurföll og berst þaðan í sjóinn
-Gervigras "mælt með því að á keppnisvöllum sé árlega bætt við 3-5 tonnum af fylliefni"
----
-
-layout: true
-class: split-two with-border border-white
-
-.column.bg-main3[.content[
-  .split-five[
- .row.bg-main1[.content.left[
-* .yellow[The soles] of tires are made of a synthetic rubber blend. 
-* .yellow[Tirewear and road particles] along with .yellow[road paint] are the most studied and can be applied to Icelandic conditions.
-* These particles range mostly from 10-100 µm (bigger than aerosol)
- ]]
-  .row.bg-main2[.content.left[
-* On road no. 1 around thi island and along country roads 90% of road runoff goes to the soil and 10% to surface water
-* In urban areas the ratio is closer to 40% to soil and 60% to the sewers.
-
- ]]
-  .row.bg-main4[.content[
-#### Overspray and flakes of old washed-off ship paint settles around in shipyards. This may be an important source of microplastic pollution. One large ship requires tonnes of paint every couple of years. 
- ]]
-  .row.bg-main2[.content[
-### Synthetic fibers go unhindered through almost all sewage systems in Iceland. The data has come to age.
- ]]
-   .row.bg-main1[.content[
-### Örplast frá snyrtivörum er aðallega vegna handsápu af verkstæðum. 
- ]]
- ]
-]]
-
-.column.bg-white[.content.center.vmiddle[
-{{content}}
-]]
-
-???
-Define the layout and for sequence hide the appropriate cell.
-
----
-
-class: hide-row2-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-
-```{r vegmerkingar, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '60%',fig.show='hold'}
- knitr::include_graphics(c("images/vegmerkingarorplast.png","images/twp.png"))
-
-```
-
-???
-
-Stærsta uppspretta örplasts í umhverfinu á Íslandi, sem lagt var mat á, er tengd bifreiðaumferð. Slit á dekkjum og vegmerkingum er um 60-85% örplastslosunar á Íslandi. 
-
----
-
-class: fade-row1-col1 hide-row3-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
-
-
-```{r  echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Microplastic release on land and in the ocean"}
-
-slit=c(244,34,22,79) 
-losun=c(106,15,9,34)
+slit=c(371, 41, 26, 33.2, 60, 3, 0.2, 8.2, 0.34, 1, 0.002)
+losun= c(164, 5.7,  0, 15.2, 3.2, 0.3, 0, 8.2, 0.34, 0, 0.002)
 land=slit-losun
-
 library(networkD3)
-A <- c("Small Vehicles ","Delivery Van ","Buses ","Lorrys ","Land ","Ocean ")
+A <-  c("Car tires ","Road paint ","Airplane tires ","House paint ","Ship paint ","Artificial turf ","Playgrounds ","Laundry ","Cosmetics ","Hail shots ","Landfill leachates ","Land ","Ocean ")
 nodes <- as.data.frame(A)
 names(nodes) <- "name"
 #nodes$name <-  as.character(nodes$name)
-links <- data.frame(source=rep(0:3,2),target=rep(4:5, each=4),value=c(land,losun))
-
+links <- data.frame(source=rep(0:10,2),target=rep(11:12, each=11),value=c(land,losun))
 Sank <- list(nodes, links)
 names(Sank) <- c('nodes', 'links')
 sn <- sankeyNetwork(
@@ -568,33 +219,362 @@ sn <- sankeyNetwork(
   units = "tonn",
   colourScale = JS("d3.scaleOrdinal(d3.schemeCategory20);"),
   fontSize = 28,
-  nodeWidth = 30, width = "500px", height = "500px", fontFamily = "Courier"
+  nodeWidth = 30, width = "681px", height = "678", fontFamily = "Courier"
 )
 #sn
 library(widgetframe)
 rammi <- frameWidget(sn)
 rammi
+```
 
+]]
+
+???
+fig.cap='Helstu uppsprettur örplasts á Íslandi og skipting þess eftir farleiðum í haf eða í jarðveg. Byggt á lægra mati.',
+Dekkjakurl berst til hafs í gegnum ræsi í þéttbýli en festist að mestu í jarðveginum við vegina. Stærsta uppspretta örplasts í umhverfinu á Íslandi, sem lagt var mat á, er tengd bifreiðaumferð. Slit á dekkjum og vegmerkingum er um 60-85% örplastslosunar á Íslandi.
+Vegmerkingar berast með sömu leiðum til hafs
+Útimálning berst einnig með affallsvatni gegnum ræsi en innimálningu er gjarnan hellt beint í niðurföll og berst þaðan í sjóinn
+Gervigras "mælt með því að á keppnisvöllum sé árlega bætt við 3-5 tonnum af fylliefni"
+
+
+---
+layout:false
+class: split-30 hide-slide-number
+background-image: url("images/blandabru.jpg")
+background-size: cover
+
+.column.slide-in-left[
+.sliderbox.shade_main.center[
+.font5[Transport]]]
+.column[
+]
+
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Róbert Daníel Jónsson ](https://www.flickr.com/photos/robbidan/)]]
+]
+---
+layout: true
+class: split-two
+
+.column.bg-main3[.content[
+  .split-three[
+ 
+ .row.bg-main1[.content.left.font_medium.vmiddle.center[
+* .blue[The soles] of tires are made of a synthetic rubber blend which is released in traffic.
+* .blue[Tirewear and road particles] along with .blue[road paint] are well studied emission sources and can be applied to Icelandic conditions.
+* These particles range mostly from .blue[10-100 µm] (bigger than aerosol)
+ ]]
+ 
+  .row.bg-main2[.content.left.font_medium[
+* .blue[Numbers] of vehicles, types and weight (Icelandic transport authority)
+* Estimates of .blue[wear] of tyres (Klein 2017)
+* Estimates of .blue[emissions] (Vershoor 2016)
+
+ ]]
+ 
+  .row.bg-main4[.content.left.font_medium[
+* On rural roads: .blue[90%] of road runoff goes to the .blue[soil] and .red[10%] to .red[surface water]
+* In urban areas:.blue[40%] to .blue[soil] and .red[60%] to the .red[sewers].
+* Great concentration of traffic in Reykjavík
+
+
+ ].bottom_abs[.footer-note[.tiny[(Klein 2017)]]]]
+ 
+]]]
+
+
+.column.bg-white[.content.center.vmiddle[
+{{content}}
+]]
+
+
+???
+Define the layout and for sequence hide the appropriate cell.
+https://tinoxchem.com/wp-content/uploads/2019/10/roadmarking.jpg
+---
+
+class: hide-row2-col1 hide-row3-col1 with-thick-border border-white
+
+# Car tyres
+
+```{r vegmerkingar1, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '60%',fig.show='hold'}
+ knitr::include_graphics(c("images/tyre.jpg","images/Kreider_et_al_2010.png"))
 ```
 
 ???
-Á þjóðvegum og sveitavegum fari 90% af affallsvatni vega í jarðveginn og 10% í yfirborðsvatn; skurði, ár og læki Í þéttbýli hérlendis fari 40% af affallsvatni vega í jarðveginn en 60% í ræsi.
+
+Stærsta uppspretta örplasts í umhverfinu á Íslandi, sem lagt var mat á, er tengd bifreiðaumferð. Slit á dekkjum og vegmerkingum er um 60-85% örplastslosunar á Íslandi. 
+
 ---
 
-class: fade-row1-col1 fade-row2-col1 hide-row4-col1 hide-row5-col1 with-thick-border border-white
+class: fade-row1-col1 hide-row3-col1 with-thick-border border-white
+
+```{r SankSmall,  echo=FALSE, message=FALSE, warning=FALSE, out.width='100%', fig.cap="Microplastic release on land and in the ocean"}
+slit=c(244,34,22,79) 
+losun=c(106,15,9,34)
+land=slit-losun
+library(networkD3)
+A <- c("Small Vehicles ","Delivery Vans ","Buses ","Lorrys ","Land ","Ocean ")
+nodes <- as.data.frame(A)
+names(nodes) <- "name"
+#nodes$name <-  as.character(nodes$name)
+links <- data.frame(source=rep(0:3,2),target=rep(4:5, each=4),value=c(land,losun))
+Sank <- list(nodes, links)
+names(Sank) <- c('nodes', 'links')
+sn <- sankeyNetwork(
+  Links = Sank$links,
+  Nodes = Sank$nodes,
+  Source = "source",
+  Target = "target",
+  Value = "value",
+  NodeID = "name",
+  units = "tonn",
+  colourScale = JS("d3.scaleOrdinal(d3.schemeCategory20);"),
+  fontSize = 28,
+  nodeWidth = 30, width = "500px", height = "400px", fontFamily = "Courier"
+)
+
+library(widgetframe)
+rammi <- frameWidget(sn)
+rammi
+```
+
+```{r akstur, echo=FALSE, cache = TRUE}
+library(RColorBrewer)
+options(OutDec = ",")
+# Heildarþyngd ökutækis: Þyngd ökutækis eða vagnlestar með ökumanni, farþegum, farmi og viðfestum vinnutækjum.
 
 
-```{r slippur, echo=FALSE, message=FALSE, warning=FALSE, fig.show='hold',out.width = '50%', dev.args=list(bg="transparent"),fig.cap='Hull length vs. hull area. Pie chart shows hull area by size categorys of ships', fig.align='center' }
+bifreidar <- matrix(c(227409,23159,2410,8078,2049,2661,9746,17181,12601,14251.6,33693.6,17832,85,102,267,546,132,159,415,850),5,4,byrow = T)
+
+slit_lagt <- bifreidar[1,]*bifreidar[3,]*bifreidar[4,]/1000000000 #Fjöldi*meðalakstur*(slit (mg/ári) lægri talan)
+losun_lagt <- c()
+  for (i in 1:length(slit_lagt)) {
+  losun_lagt[i] <- (2/3)*slit_lagt[i]*0.6+(1/3)*slit_lagt[i]*0 #Verschoor2016
+}
+slit_lagt <- round(slit_lagt,0)
+losun_lagt <- round(losun_lagt,0)
+
+slit_hatt <- bifreidar[1,]*bifreidar[3,]*bifreidar[5,]/1000000000 #Fjöldi*meðalakstur*(slit (mg/ári) hærri talan)
+losun_hatt <- c()
+for (i in 1:length(slit_hatt)) {
+  losun_hatt[i] <- (2/3)*slit_hatt[i]*0.6+(1/3)*slit_hatt[i]*0 #Verschoor2016
+}
+slit_hatt <- round(slit_hatt,0)
+losun_hatt <- round(losun_hatt,0)
+
+slit_ari <- ifelse(slit_hatt>slit_lagt,paste(slit_lagt,slit_hatt,sep = "-"),paste(slit_hatt,slit_lagt,sep = "-"))
+losun_ari <- ifelse(losun_hatt>losun_lagt,paste(losun_lagt,losun_hatt,sep = "-"),paste(losun_hatt,losun_lagt,sep = "-"))
+
+bifreidar[2,] <- round(bifreidar[2,]/1000,2)
+bifreidar[3,] <- round(bifreidar[3,]/1000,2)
+bifreidar <- rbind(bifreidar[1:3,],paste(bifreidar[4,],bifreidar[5,],sep="-"),slit_ari,losun_ari)
+
+colnames(bifreidar) <- c("Small Vehicles","Delivery Vans","Buses","Lorrys")
+rownames(bifreidar)<- c("Number","Mean weight (t)","Average usage (K km/year)","Wear & tear (mg/km)", "Wear & tear (t/year)", "Release to ocean (t/year)")
+
+
+#bifreidar <- rbind(icon[c(1,2,3,4)],bifreidar)
+bifreidar <- format(bifreidar,  decimal.mark=",", big.mark=".", scientific=FALSE)
+
+if (knitr::is_html_output()) {
+   knitr::kable(bifreidar, booktabs=T, caption = ".")
+
+} else {
+  rownames(bifreidar)<- c("Fjöldi","Meðalþyngd (t)","Meðalakstur (þús. km/ár)","Slit (mg/km)", "Slit (t/ár)", "Losun í hafið (t/ár)")
+ knitr::kable(bifreidar, caption = "Áætluð árleg losun örplasts í hafið vegna slits á hjólbörðum bifreiða. Fjöldi bíla af mismunandi gerðum í umferð á Íslandi þann 14. ágúst 2018 og meðalakstur skv. Umferðastofu. Með meðalþyngd er átt við heildarþyngd skv. reglugerð. Byggt á mati Klein (2017) og Verschoor (2016)",format = 'latex', booktabs=T)
+   }
+options(OutDec = ".")
+
+```
+
+
+???
+Klein J, Geilenkirchen G, Hulskotte J, Ligterink N, Molnár-in’t Veld H. Methods for calculating the emissions of transport in the Netherlands. The report, including the tables in the Excelfile, can be found on: http://www cbs nl. 2017. https://www.pbl.nl/en/publications/methods-for-calculating-transport-emissions-in-the-netherlands-2017.
+
+Verschoor A, Poorter L de, Dröge R, Kuenen J, Valk E de. Emission of microplastics and potential mitigation measures. 2016:76. https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/rapporten/2016/07/11/emission-of-microplastics-and-potential-mitigation-measures/emission-of-microplastics-and-potential-mitigation-measures.pdf.
+
+---
+
+class: fade-row1-col1 fade-row2-col1 with-thick-border border-white
+
+# Highly concentrated population and traffic
+
+```{r trafficdens, echo=FALSE, message=FALSE, warning=FALSE, out.width = '100%', dev.args=list(bg="transparent"), fig.align='center' }
+mynd <- knitr::include_graphics('images/trafficDensity_BG.png')
+mynd
+```
+
+---
+
+layout: true
+class: split-two with-border border-white
+
+.column.bg-main3[.content[
+.split-three[
+
+  .row.bg-main2[.content.font_medium[
+* .blue[The Icelandic road (and coastal) administration] .white[IRCA] oversees the majority of the roadsystem and supplied available statistics based on their inventory of imported road paint.
+* Polymer ingredient uncertain - .red[large margin of error]
+
+ ]]
+   
+   .row.bg-main1[.content.font_medium[
+* Much of the road paint is on .red[rural] roads and goes therefore mostly into .red[soil] (Klein 2017)
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Alta](https://www.alta.is/)]]
+]]]
+
+   .row.bg-main1[.content.font_medium[
+* Up to ½ Kg loss per take off/landing (Kole 2017)
+* One international airport in Iceland
+* Run-off water drained in soil around the airport 
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Mats Wibe Lund](https://mats.photoshelter.com/index)]]
+]]]
+
+]
+ ]]
+ 
+
+.column.bg-white[.content.center.vmiddle[
+{{content}}
+]]
+
+---
+
+class: hide-row2-col1 hide-row3-col1 with-thick-border border-white
+
+
+```{r vegmerkingSank,  echo=FALSE, message=FALSE, warning=FALSE, out.width='100%', fig.cap=" ", cache=T}
+nodes <- c('Larger mun. ','Smaller mun. ','IRCA ','Thermopl. ','Paint ','Source low est. ','Source high est. ','Ocean','Ocean','Land','Land')
+nodes <- as.data.frame(nodes)
+names(nodes) <- "name"
+#nodes$name <-  as.character(nodes$name)
+links <- data.frame(source=c(0,1,2,2,3,4,3,4,5,6,5,6),target=c(3,4,3,4,5,5,6,6,7,8,9,10),value=c(110,15,543,218,6,35,163,93,5.7,42.6,35,213))
+rass <- list(nodes,links)
+names(rass) <- c('nodes','links')
+sn <- sankeyNetwork(Links = rass$links,
+                    Nodes = rass$nodes,
+                    Source = "source",
+                    Target = "target",
+                    Value = "value",
+                    NodeID = "name",
+                    units = "Tonn",
+                    colourScale = JS("d3.scaleOrdinal(d3.schemeCategory20);"),
+                    fontSize = 28,
+                    nodeWidth = 30, 
+                    width = "500px", 
+                    height = "400px", 
+                    fontFamily = "Courier")
+
+library(widgetframe)
+rammi <- frameWidget(sn)
+rammi
+  
+```
+
+
+```{r vegagerd, echo=FALSE, message=FALSE, warning=FALSE, fig.show='hold',out.width = '70%', dev.args=list(bg="transparent") }
+
+img <- knitr::include_graphics("images/roadmarking.jpg")
+img
+```
+
+---
+class: fade-row1-col1 hide-row3-col1 with-thick-border border-white
+
+### MP's from road emissions - sewer vs. soil Færa þessa upp með trafficdensity?
+
+```{r kef, echo=FALSE, message=FALSE, warning=FALSE,out.width = '100%'}
+mynd <- knitr::include_graphics("images/ALTA.png")
+mynd
+```
+
+---
+class: fade-row1-col1 fade-row2-col1 with-thick-border border-white
+
+# Airplanes 
+### (Keflavík Airport)
+
+```{r kefB, echo=FALSE, message=FALSE, warning=FALSE,out.width = '100%'}
+mynd <- knitr::include_graphics("images/keflavik.jpg")
+mynd
+```
+
+---
+layout:false
+class: split-20 hide-slide-number
+background-image: url("images/skipamalning.jpg")
+background-size: cover
+
+.column.slide-in-left[
+.sliderbox.shade_main.center[
+.font5[Paint and stuff]]]
+.column[
+]
+
+---
+layout: true
+class: split-two with-border border-white
+
+.column.bg-main3[.content[
+  .split-three[
+
+ .row.bg-main1[.content.left.font_medium[
+* Smaller boats are often painted by owners themselves every 3 to 5 years
+* The hull (bottom side) is more frequently painted (every year or every other year)
+* .blue[Polymer content] varies (30%-80%)
+ ]]
+ 
+  .row.bg-main2[.content.left.font_medium[
+* Total wettet area of the Icelandic fleet (Moser 2016)
+* The more numerous small boats don't contribute much to MP pollution
+* One large ship requires tonnes of paint every couple of years.
+* Overspray and flakes of .blue[old washed-off ship paint] settles around in shipyards.
+* Overall not a large source if shipyards follow proper etiquette 
+
+ ].bottom_abs[.footer-note[.tiny[[Icelandic transport authority](https://www.icetra.is/)]]]]
+
+  .row.bg-main4[.content.font_medium[
+* Unknown source
+* 7000 tonnes in use in Icelandic waters
+* Different types of filament shed at different rates
+* different usage and strain
+* Much more scary as macroplastic
+
+ ]]
+
+ ]
+]]
+
+.column.bg-white[.content.center.vmiddle[
+{{content}}
+]]
+
+
+---
+
+class: hide-row2-col1 hide-row3-col1 with-thick-border border-white
+
+```{r litlislippur, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '100%'}
+ knitr::include_graphics(c("images/Hvammstangi.jpg","images/slippurb.jpg"))
+```
+
+---
+
+class: fade-row1-col1 hide-row3-col1 with-thick-border border-white
+
+```{r storuskipin, echo=FALSE, message=FALSE, warning=FALSE, out.width = '90%', fig.align='center' }
+knitr::include_graphics("images/slippurStor.jpg")
+```
+
+```{r slippurinn, echo=FALSE, message=FALSE, warning=FALSE, fig.show='hold',out.width = '50%', dev.args=list(bg="transparent"),fig.cap='Hull length vs. hull area. Pie chart shows hull area by size categorys of ships', fig.align='center' }
 par(mar = c(4.6, 6, 0, 0))
 Batar <- read.csv("skjol/batar.csv",fileEncoding = "UTF-8")
 litlir <- Batar[Batar$Lengd<15,]
 storir <- Batar[Batar$Lengd>30,]
 adrir <- Batar[!rownames(Batar) %in% c(rownames(litlir),rownames(storir)),]
 Batar$gerd <- ifelse(Batar$Lengd<15, "Small boats",ifelse(Batar$Lengd>15 & Batar$Lengd<30,"Medium boats","Larger ships"))
-
 litura="#cb5600"
 liturb="#28c1ff"
-
 yLab=expression(paste("Hull Area ( ",m^2,")"))
 xLab="Ship Length (m)"
 plot(Batar$Lengd,(Batar$WSA),type='n', ylab = "",xlab="")
@@ -604,7 +584,6 @@ points(litlir$Lengd,(litlir$WSA),col=liturb, pch=18)
 points(adrir$Lengd,(adrir$WSA),col=1)
 points(storir$Lengd,(storir$WSA),col=litura, pch=19)
 legend("topleft",c("Small boats <15m. N=972","Mid sized ships N=75","Larger ships >30m. N=99"),col = c(liturb,1,litura),pch = c(18,1,19),cex=2,bty='n')
-
 # landi <- data.frame(
 #   skr=c(2890,2889,2895,1868,2170,1902,2881,2882,2184),
 #   L = c(54.75,54.75,54.75,56.86,64.55,55.6,80,81,66.96),
@@ -615,30 +594,161 @@ legend("topleft",c("Small boats <15m. N=972","Mid sized ships N=75","Larger ship
 # 
 # landi2 <- Batar[Batar$Skipaskrárnúmer %in% landi$skr,]
 # points(landi2$Lengd,landi2$WSA,pch=13,cex=2,col=2) #Skip HBGranda
-
 par(mar = c(0, 0, 0, 0))
 require(plyr)
 kaka <- ddply(Batar,.(gerd),summarise,Flatarmal=sum(WSA))
 pie(kaka$Flatarmal,labels = kaka$gerd, border="grey",col = c("transparent",liturb,litura),cex=2,radius = 0.6)
 ```
 
+
+
 ---
-class: fade-row1-col1 fade-row2-col1 fade-row3-col1 hide-row5-col1 with-thick-border border-white
 
+class: fade-row1-col1 fade-row2-col1 with-thick-border border-white
 
-```{r gervigras, echo=FALSE, message=FALSE, warning=FALSE,out.width = '50%'}
-mynd <- knitr::include_graphics("images/DEFALCO2018.jpg")
-mynd
+# Fishing Gear
+
+```{r veidarf, echo=FALSE, message=FALSE, warning=FALSE, out.width = '100%', fig.align='center',fig.show = 'hold' }
+knitr::include_graphics("images/kadlar.jpg")
 ```
 
+<!-- .bottom_abs[.footer-note[.tiny[.green[Image Credit: ][MSC.org](https://www.msc.org/media-centre/news-opinion/2018/10/31/managing-the-impacts-of-abandoned-lost-or-discarded-fishing-gear)]] -->
+<!-- ] -->
+
+
 ---
-class: fade-row1-col1 fade-row2-col1 fade-row3-col1 fade-row4-col1 with-thick-border border-white
+layout:false
+class: split-30 hide-slide-number
+background-image: url("images/household.jpg")
+background-size: cover
+
+.column.slide-in-left[
+.sliderbox.shade_main.center[
+.font5[Household]]]
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Ziko van Dijk](https://commons.wikimedia.org/wiki/File:201708_Hallgr%C3%ADmskirkja_b16.jpg)]]
+.column[
+]
+
+---
 
 
-```{r homer, echo=FALSE, message=FALSE, warning=FALSE,out.width = '100%',fig.show='hold'}
+
+layout: true
+class: split-two with-border border-white
+
+.column.bg-main3[.content[
+  .split-three[
+
+ .row.bg-main1[.content.left.font_medium[
+* 120 thousand homes, 2.9 people per home...
+* 30-50% (Pakula 2010)
+* Data has come of age (more synthetics every year)
+ ]]
+ 
+  .row.bg-main2[.content.left.font_medium[
+* The sewage system disregards µ-particles
+* `Wetted area = a*Gross tonnage^b` (Moser 2016)
+* The more numerous small boats don't contribute much to MP pollution
+
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][The Environment Agency](https://tinyurl.com/y6b6x49y)]]
+]
+]]
+
+  .row.bg-main4[.content[
+#### Overspray and flakes of old washed-off ship paint settles around in shipyards. This may be an important source of microplastic pollution. One large ship requires tonnes of paint every couple of years. 
+ ]]
+
+ ]
+]]
+
+.column.bg-white[.content.center.vmiddle[
+{{content}}
+]]
+
+???
+
+---
+
+
+class: hide-row2-col1 hide-row3-col1 with-thick-border border-white
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width = '100%', fig.align='center',fig.show = 'hold' }
+
+
+knitr::include_graphics("images/Textilkennzeichnungab.jpg")
+
+library(magrittr)
+"Fjöldi.þvotta.á.ári" = 165
+"Fjöldi.heimila" = 120000
+"þyngd.þvotta" = c(3,4) #3-4 kg
+"þyngd.örplasts.fyrir.hvert.kg.gerviefna" = c(0.000012,0.00064) #12-640 mg
+"Hlutfall.gerviefna.í.þvotti" = c(0.3,0.5) #30-50%
+
+#Fjöldi.þvotta.á.ári*Fjöldi.heimila*þyngd.þvotta*þyngd.örplasts.fyrir.hvern.þvott*þyngd.örplasts.fyrir.hvert.kg.gerviefna
+
+nafnalisti <- c("No. washes per home",
+                "No. homes",
+                "Weight of wash",
+                "MP for each kg of wash",
+                "Synthetics per wash")
+
+lina <- matrix(c("165","Wash","120,000","Home","3-4","kg","12-640","mg","30-50","% synthetics"),ncol = 2,byrow = T,dimnames = list(nafnalisti,c("","Unit")))
+
+
+knitr::kable(lina,align = "c", caption = 'Estimated yearly shedding of MP`s from household laundry') %>% kableExtra::kable_styling(c("striped", "bordered", full_width = F, position = "center"))
+```
+
+.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Abrev](https://en.wikipedia.org/wiki/Textile_Labelling_Act_(Germany)#/media/File:Textilkennzeichnungab.jpg)]]
+]
+
+
+---
+class: fade-row1-col1 hide-row3-col1 with-thick-border border-white
+
+
+
+```{r skolp, echo=FALSE, fig.align='center', fig.cap='Type of sewage system', message=FALSE, warning=FALSE, dev.args=list(bg="transparent"), out.width='50%', fig.show='hold'}
+
+knitr::include_graphics("images/Fraveita.jpg")
+knitr::include_graphics("images/map.png")
+
+par(mar=c(4,4,4,2))
+
+roundUpNice <- function(x, nice=c(1,2,4,5,6,8,10)) {
+  if(length(x) != 1) stop("'x' must be of length 1")
+  10^floor(log10(x)) * nice[[which(x <= 10^floor(log10(x)) * nice)[[1]]]]
+} # https://stackoverflow.com/questions/6461209/how-to-round-up-to-the-nearest-10-or-100-or-x
+
+skólptölur <- read.csv("skjol/skolp_urban.csv", sep="\t",encoding = "UTF-8")
+skólptölur <- skólptölur[!is.na(skólptölur$Magn.skólps..pe..)& skólptölur$Magn.skólps..pe..>0,]
+levels(skólptölur$Tegund.hreinsunar) <- c("Eins þreps","Ekki vitað","Engin","Ítarleg","GÍtarleg","SÍtarleg","Rotþrær","Tveggja þrepa","STveggja þrepa") #Hreinsa gögnin
+require(plyr)
+svaedi <- ddply(skólptölur,.(Svæði,Tegund.hreinsunar),summarise,Magn=sum(Magn.skólps..pe..),.drop=F)
+skólp_fylki <- matrix(svaedi$Magn,nrow = length(levels(as.factor(svaedi$Tegund.hreinsunar))),ncol = length(unique(svaedi$Svæði)),dimnames=list(levels(as.factor(svaedi$Tegund.hreinsunar)),levels(svaedi$Svæði)))
+
+landshlutar <- c('(NW)','(NE)','(SE)','(SW)')
+colnames(skólp_fylki) <- paste(unique(svaedi$Svæði),landshlutar,sep="\n")
+
+litir <- c('#7ECEF0','white','#CB5600', '#7F7CAF','#28587B','seashell')
+bp <- barplot(skólp_fylki,ylab='',xlab='',axes=F,beside=TRUE,ylim=c(0,max(skólp_fylki)*1.1))
+abline(h=seq(0,roundUpNice(1.1*max(skólp_fylki)),roundUpNice(1.1*max(skólp_fylki))/5), col = 'lightgray', lty = 3)
+barplot(skólp_fylki, main='Tegund skólphreinsunar', ylab="Magn (þúsundir pe.)", beside=TRUE, axes = F, col=litir ,ylim = c(0,max(skólp_fylki)*1.1),add=T);box()
+axis(2,seq(0,roundUpNice(1.1*max(skólp_fylki)),roundUpNice(1.1*max(skólp_fylki))/5),labels = seq(0,roundUpNice(1.1*max(skólp_fylki))/1000,roundUpNice(1.1*max(skólp_fylki))/5000),las=2)
+legend('topleft', levels(as.factor(svaedi$Tegund.hreinsunar)), fill=litir)
+
+```
+
+
+
+---
+class: fade-row1-col1 fade-row2-col1 with-thick-border border-white
+
+
+```{r romer, echo=FALSE, message=FALSE, warning=FALSE,out.width = '100%',fig.show='hold'}
 mynd <- knitr::include_graphics(c("images/thok.png","images/burstathrif.png"))
 mynd
 ```
+
 
 ---
 
@@ -698,17 +808,13 @@ Wood = rowSums(ospar[, substr(colnames(ospar), 1, 4) == "Wood"]),
 Metal = rowSums(ospar[, substr(colnames(ospar), 1, 5) == "Metal"]),
 check.names = FALSE
 )
-
 # if (knitr::is_latex_output()) {
 library(dplyr)
 library(tidyr)
-
 ldf <- df %>% gather(Efni, fjoldi, 3:8)
 plot(factor(ldf$Efni), ldf$fjoldi,ylab="Number of items")
 #rass <- data.frame(ldf$`Dags.(ár-mán-dag)`,ldf$Efni,ldf$fjoldi)
 #colSums(prop.table(t(matrix(rass$ldf.fjoldi,ncol = 18,byrow = T,dimnames = list(c(unique(rass$`Dags.(ár-mán-dag)`),as.character(unique(rass$ldf.Efni))))))))
-
-
 # } else {
 # library(DT)
 # datatable(df[order(df[, 3], decreasing = T), ]) %>%
@@ -721,8 +827,6 @@ plot(factor(ldf$Efni), ldf$fjoldi,ylab="Number of items")
 # )
 #
 # }
-
-
 ```
 
 
@@ -739,17 +843,76 @@ Orkumikil kerfi sem virka eins og myllur fyrir örplast
 
 Losun örplasts fer eftir því hvernig veiðarfæri um ræðir en sum þeirra slitna og missa þræði við notkun í mismiklum mæli. Aðrar gerðir veiðarfæra líkt og grásleppunet og handfæralínur slitna ekki með þeim hætti. Í sænskri rannsókn var losun örplasts metin 1-10% af heildarþyngd veiðarfæra
 Minnast á sjókvíaeldi
+
+
+
 ---
+
+
+
+layout: false
+class: split-33
+
+.column.bg-main3[.content.vmiddle.center[
+.white[
+# Main Pathways
+]
+]]
+.column[.content.vmiddle.center[
+.center[
+.img-contain[![](images/ALTA.png)]
+.img-fill[![](images/runoff.jpeg)]
+]]]
+
+
+???
+In urban areas more runoff-water flows through the sewage
+---
+
+layout: false
+class: split-33
+
+.column.bg-main3[.content.vmiddle.center[
+.white[
+# Main Pathways
+]
+]]
+.column[.content.vmiddle.center[
+.center[
+.img-contain[![](images/ALTA.png)]
+.img-fill[![](images/ellidaar_saevarhofdi_02.jpg)]
+]]]
+
+
+???
+In urban areas more runoff-water flows through the sewage
+
+
+---
+
 
 layout: false
 class: bg-main1 
 
 # Thanks for listening!
 .font2[
-*  .yellow[The report] can be attained here [`r anicon::faa('external-link-alt', animate='float', rtext='MP report')`](https://harkanatta.github.io/orplastskyrslaUAR/) (*in Icelandic*)
-* .yellow[The Github repo] is here [`r anicon::faa("github", animate="vertical")`](https://github.com/harkanatta/orplastskyrslaUAR) 
+*  .yellow[The report] can be attained here [`r icon::octicons$share`](https://harkanatta.github.io/orplastskyrslaUAR/) (*in Icelandic*)
+* .yellow[The Github repo] is here [`r icon::simple_icons$github`](https://github.com/harkanatta/orplastskyrslaUAR) 
 
 * This presentation was made with the R Package [Xaringan](https://github.com/yihui/xaringan) after a [template](https://emitanaka.org/ninja-theme/themes/kunoichi/kunoichi-theme-example.html) by Emi Tanaka
 * This project was made for [The ministry for the environment and natural resources](https://www.government.is/ministries/ministry-for-the-environment-and-natural-resources/)
 ] 
-<img src="images/UAR_IS - Copy (1).svg" height="20%" align="left" />
+
+<!-- <div class="image123"> -->
+<!--     <div class="imgContainer"> -->
+<!--         <img src="images/nnvlogo.png" width="120%"  /> -->
+<!--     </div> -->
+<!--     <div class="imgContainer"> -->
+<!--         <img src="images/UAR_IS - Copy (1).svg" /> -->
+<!--     </div> -->
+<!--     <div class="imgContainer"> -->
+<!--         <img src="images/zeropoint_logo.png" width="32%" /> -->
+<!--     </div> -->
+<!-- </div> -->
+
+

@@ -12,7 +12,7 @@
 
 
 :root {
-    --main-color1: rgba(125, 232, 197, 91);
+    --main-color1: #7DE8C5;
     --main-color2: #B8FF96;
     --main-color3: #2268BC;
     --main-color4: #FFC78A;
@@ -156,3 +156,7 @@ body{
 }
 
 a { color: var(--link-color); text-decoration: none; }
+
+.imgContainer{
+    float:left;
+}

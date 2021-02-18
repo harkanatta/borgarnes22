@@ -1,0 +1,30 @@
+Title slide:
+This is a talk about the main sources of MP's in Iceland and the pathways to the ocean. It's taken from a report that the companies/institutions I work for did for the environmental ministry of Iceland.
+
+Backstroy:
+A quick backstory on how this project came to me or us. Well, Biopol had done environmental sampling of plankton (both phytoplankton and zooplankton) for several years and these particles and threads had always been there in the samples and we would think none of it until a researcher heard about MP's and started counting them. Then later we noticed that fibers from our sampling gear and our clothes were detectable in our samples so we upgraded our methods to meet the relevant standards of MP sampling and purification of the samples and today we go through the whole process, from sampling to analyzing spectral data.
+
+Travolta:
+Well were does mp pollution in Icelandic seas come from?
+We can't separate the sources from the pathways since it had to reach the ocean by some means
+
+Is there any thing special about the pathways in Iceland? We are very sparsely populated (two thirds of the population live near Reykjavík) and we do not treat our sewage with the aim of reducing mp's. 
+The important pathways Iceland are therefor the sewage system and road run-off in Reykjavík.
+
+Sýna strumakort?
+Most of the sewage is piped into Faxaflói where mp particles mix with the ocean and are potentially driven north- and eastwards with coastal currents (the currents are very well documentet because of fish larval drift). These currents might then sink as the water gets cooler and join the deep subpolar currents flowing the same way back only in deeper waters, going southwards back into the Atlantic through the Denmark Strait (or Greenland Strait as Icelanders call it to avoid confusion). But who knows...? The fait of mp particles are largely unknown.
+
+
+
+Main Sources:
+The main MP's sources in Iceland are the usual suspects
+
+Sankey:
+These are the most important sources of MP's accdording to our study.
+(Move the bars around)
+We divide them with respect to their fate or where they end up eventually, if they fall into soil or landfill for example or if they're delivered straight to the sea.
+You can see, for example, how the shedding of MP particles from laundry goes almost exclusively to the ocean via sewage while the majority of the much greater source, car tires, end up in soil on land.
+Confidence intervals are not presented and these are the lower estimates.
+
+next widget (car tires)
+
