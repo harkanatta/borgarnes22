@@ -44,6 +44,12 @@
   margin: -2.5%;
 }
 
+.figb80 img {
+  width: 80% !important;
+  padding: 5%;
+  margin: -2.5%;
+}
+
 .fig img {
   width: 104%;
   padding: 0;

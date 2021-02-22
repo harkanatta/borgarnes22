@@ -8,23 +8,78 @@ Travolta:
 Well were does mp pollution in Icelandic seas come from?
 We can't separate the sources from the pathways since it had to reach the ocean by some means
 
-Is there any thing special about the pathways in Iceland? We are very sparsely populated (two thirds of the population live near Reykjavík) and we do not treat our sewage with the aim of reducing mp's. 
-The important pathways Iceland are therefor the sewage system and road run-off in Reykjavík.
+Runing water is the main pathway for MPs. Wind is definately a pathway but excluded in this study. There haven't been many extansive studys on pathways of MPs, mainly because of difficulties with sampling, and certainly non such studys in Iceland. So to estimate how much of the sources that don't go directly to the sea, reach the ocean, we used this rough devition between urban and rural. So if a certain number of vehicles go through in an urban setting it is 40/60 if it's in a rural area it's 90/10.
+
+
+Main Sources:
+The main MP's sources in Iceland are the usual suspects
+
+
+Sankey:
+These are the most important sources of MP's accdording to our study.
+(Move the bars around)
+We divide them with respect to their fate or where they end up eventually, if they fall into soil or landfill for example or if they're delivered straight to the ocean.
+You can see, for example, how the shedding of MP particles from laundry goes almost exclusively to the ocean via sewage while the majority of the much greater source, car tires, end up mostly in soil on land.
+Confidence intervals are not presented in this visualization and these are the lower estimates.
+
+next widget (car tires)
+
+Traffic
+On this picture is a bridge over the river Blanda on the main road that circles the country
+
+Lets start with the biggest source, car tyres. The asphalt scrapes the rubber of the tyres like sandpaper, mixing with them and forming these little turd-like particles that you see on the image. Theese particle are to big for aerosol so they're mostly carried away with road run-off, either into the soil, to the sewer or some waterway or stream.
+
+To estimate the total source of microplastics from car tyres data from the Icelandic transport authority was used with estimates of wear of tyres for different size classes of vehicles. To evaluate how much of it could possibly end up in the ocean estimates of emissions were used.
+
+Another large source of MP's in the transportation category is road paint. Road paint (both spray paint and thermoplastics) has plastic polymers as binding material in it. The road administration supplied available statistics based on their inventory of imported road paint. A few municipalities supplied us with documents so we could come up with an approximation of road paint in the country. There are different materials in use and polymer content is not always available.
+
+
+Is there any thing special about the pathways in Iceland? 
+
+We are very sparsely populated (two thirds of the population live near Reykjavík) and we do not treat our sewage with the aim of reducing mp's. 
+The most important pathways in Iceland are therefore the sewage system and road run-off in Reykjavík.
+
+Interestingly Airplanes shed hundreds of grams of tyre ware for each take off and landing. The past decade or so (excluding 2020) 26-50 tonnes of tyre ware particles are released in the Keflavík airport. The runways drain to the surrounding soil. So it's outside the scope of this study.
+
+That's Eiríkur
+ - Local fisherman in my village
+ - He's painting the upper part of his boat (the boat must be hauled on land to paint the hull)
+ - Eiríkur goes fishing all year round and hires his sons in the summer
+ 
+This is his is son (or his sons car )
+He's the former national champion in drifting (and no. 1 in the village)
+ 
+There are not many brick houses in Iceland. Most houses need painting especially on the southern side (the sunny, rainy side) and on the tin roofs.
+Most of the polymers in outdoor housepaint is volatilized over the course of its lifetime, since there are up to 10 years between paint jobs. Still flakes of paint settle on the ground either because of weathering or power washing. 
+Ground area of buildings in Iceland (or roof area almost) is 70% in towns and Reykjavík. Rural houses completely left out in this study, regarding outdoor paint. 
+
+Small boats are often taken on land over winter and painted before being put afloat again early spring. The hull of the boat is painted more frequently with water soluble paint that is not regarded as MP. 
+Again, polymere content varies alot so the certainity isn't much.
+
+Only a handfull of passenger ship are in Icelandic waters compared to the number of fishing ships so to calculate the amount of ship paint used in total in Icelandic seas I used data about ship length and an equation from Moser. There are a thousand small boats registered in Iceland and a littla short of 200 ships. 4 large shipyards (thereof 3 in southwest of the country) that service maybe close to a hundred ships every year (both Icelandic ships and ships from abroad).
+Tonnes of flakes are scraped and power-washed in the shipyards but if they are scooped up properly and disposed of carefully then this is a rather small source of mp pollution. We got contradicting information from staff in these shipyards, people pointed at each other saying they do it the right way but others dont. We give them the benefit of the doubt so ship paint is a rather small source of mp.
+
+Since we are on the topic of fisheries I want to mention fishing gear shortly. Someone at the marine institute said that compared to other countries Iceland had less fishing gear for every kg of cought fish. It is hard to estimate this source of mp since both the weight of total fishing gear and the rate of which it detiriorates and sheds mp is unknown. One source mentioned up to 10% of fishing gear weight could become mp pollution.
+
+According to a study in 2010 (Pakula) Icelandic homes do their laundry 165 a year, medium weight of a single wash in the western world is between 3 and 4 kg and 30 to 50% sythetic clothing. Another study from sweden (2018) showed that for every kg of synthetic clothing 12 to 640 mg of mp shed off. So theese calculations are pretty straight forward. All washed straight to the ocean, nice and clean for data scientists but not so clean for the environment. Oh well some sewage is collected inland but that is a tiny proportion. Some of it might even be spread on farmland where it is joined by a less noticable source in slow releasing fertilizer capsules made of microplastic.
+
+Iceland can be split up into four main watersheds, the SW one is highlighted on the map to the left. 
+
+
+
+
+ 
+
+
+
+
+
+
 
 Sýna strumakort?
 Most of the sewage is piped into Faxaflói where mp particles mix with the ocean and are potentially driven north- and eastwards with coastal currents (the currents are very well documentet because of fish larval drift). These currents might then sink as the water gets cooler and join the deep subpolar currents flowing the same way back only in deeper waters, going southwards back into the Atlantic through the Denmark Strait (or Greenland Strait as Icelanders call it to avoid confusion). But who knows...? The fait of mp particles are largely unknown.
 
 
 
-Main Sources:
-The main MP's sources in Iceland are the usual suspects
 
-Sankey:
-These are the most important sources of MP's accdording to our study.
-(Move the bars around)
-We divide them with respect to their fate or where they end up eventually, if they fall into soil or landfill for example or if they're delivered straight to the sea.
-You can see, for example, how the shedding of MP particles from laundry goes almost exclusively to the ocean via sewage while the majority of the much greater source, car tires, end up in soil on land.
-Confidence intervals are not presented and these are the lower estimates.
-
-next widget (car tires)
 
