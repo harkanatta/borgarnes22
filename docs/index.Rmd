@@ -576,67 +576,9 @@ background-size: cover
 That's Eiríkur
  - Local fisherman in my village
  - He's painting the upper part of his boat (the boat must be hauled on land to paint the hull)
- - Eiríkur goes fishing all year round and hires his sons in the summer
-
----
-
-class: split-25 bg-white with-border
-
-.row[.font5.center[Outdoor Paint]
-]
-.row[
-  .split-three.with-border[
-  .column[.content[
-  <br>
-  <br>
-<img src="images/thokB.jpg" width=100%>
-    ]]
-  .column.bg-white[.content[
-  
-* .font2[.font-dance[Almost] .red[all roofs] and .red[every house] painted]
-* .font2[Most of the polymers volatilized .font-dance[in the sun] .yellow[ `r icon::octicons$sun`]] .tiny[(Hann 2018)]
-* .font2[Calculations based on ready-made imported paint]
- 
-  ]]
-  .column[.content[
-  <br>
-  <br>
-<img src="images/thok.png" width=100%>
-  ]]
-]]
-
-???
-Most houses need painting especially on the southern side (the sunny, rainy side) and on the tin roofs. There are not many brick houses in Iceland. 
-Most of the polymers in outdoor housepaint is volatilized over the course of its lifetime, since there are up to 10 years between paint jobs. Still flakes of paint settle on the ground either because of weathering or power washing and might be delivered to the ocean through sewage. Here, rural areas are left out because of lack of pathways for theese particles to reach the ocean.
-
----
-class: split-30 bg-white with-border
-
-.row[.font5.center[Indoor Paint]
-]
+ - Eiríkur goes fishing all year round and paints the boat every year
 
 
-.row[
-  .split-two.with-border[
-  .column.bg-main1[.content[
-#Paintbrush cleaning
-<img src="images/burstathrif.png" width=100%>
-
-    ]]
-
-  .column.bg-orange[.content[
-* .font2[Homeowners wash indoor paint .white[directly down the drain]]
-
-* .font2[Estimated polymer content 20%] (Kole 2018)
-
-* .font2[Data not available .font-dance[(paint is just paint)]]
-
-* .font2[Calculations based on ready-made imported paint]
-  ]]
-]]
-
-???
-Indoor paint doesn't flake of the walls while the house still stands but it is washed down the drain. Data about polymer content wasn't easy to attain and it's not always registered for some lack of interest.
 
 ---
 
@@ -776,6 +718,67 @@ knitr::include_graphics("images/kadlar.jpg")
 
 ???
 Since we are on the topic of fisheries I want to mention fishing gear shortly. Maybe 7000 tonnes is a bit too high of an estimation. Someone at the marine institute said that compared to other countries Iceland had less fishing gear for every kg of cought fish. ...It is hard to estimate this particular source of mp since both the weight of total fishing gear and the rate of which it deteriorates and sheds mp is unknown. One source mentioned up to 10% of fishing gear weight could become mp pollution. even 1 % would make it a considerable amount 
+
+
+---
+
+class: split-25 bg-white with-border
+
+.row[.font5.center[Outdoor Paint]
+]
+.row[
+  .split-three.with-border[
+  .column[.content[
+  <br>
+  <br>
+<img src="images/thokB.jpg" width=100%>
+    ]]
+  .column.bg-white[.content[
+  
+* .font2[.font-dance[Almost] .red[all roofs] and .red[every house] painted]
+* .font2[Most of the polymers volatilized .font-dance[in the sun] .yellow[ `r icon::octicons$sun`]] .tiny[(Hann 2018)]
+* .font2[Calculations based on ready-made imported paint]
+ 
+  ]]
+  .column[.content[
+  <br>
+  <br>
+<img src="images/thok.png" width=100%>
+  ]]
+]]
+
+???
+Most houses need painting especially on the southern side (the sunny, rainy side) and on the tin roofs. There are not many brick houses in Iceland. 
+Most of the polymers in outdoor housepaint is volatilized over the course of its lifetime, since there are up to 10 years between paint jobs. Still flakes of paint settle on the ground either because of weathering or power washing and might be delivered to the ocean through sewage. Here, rural areas are left out because of lack of pathways for theese particles to reach the ocean.
+
+---
+class: split-30 bg-white with-border
+
+.row[.font5.center[Indoor Paint]
+]
+
+
+.row[
+  .split-two.with-border[
+  .column.bg-main1[.content[
+#Paintbrush cleaning
+<img src="images/burstathrif.png" width=100%>
+
+    ]]
+
+  .column.bg-orange[.content[
+* .font2[Homeowners wash indoor paint .white[directly down the drain]]
+
+* .font2[Estimated polymer content 20%] (Kole 2018)
+
+* .font2[Data not available .font-dance[(paint is just paint)]]
+
+* .font2[Calculations based on ready-made imported paint]
+  ]]
+]]
+
+???
+Indoor paint doesn't flake of the walls while the house still stands but it is washed down the drain. Data about polymer content wasn't easy to attain and it's not always registered for some lack of interest.
 
 ---
 layout:false
