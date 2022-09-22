@@ -31,9 +31,9 @@ background-size: 100%
 .center[
 # .yellow[Örplast]
 ## .yellow[í náttúru Íslands]
-### .white[Unnið úr verkefni sem gert var fyrir umhverfisráðuneytið] ![](images/skjldr.svg)
 
-## ![](images/Biopol_logo_small.jpg) ![](images/nnvlogo.png)
+## ![](images/NNV-logo.png)
+
 
 
 ]]
@@ -79,9 +79,10 @@ class: split-two with-thick-border border-cyan
 
 .content.vmiddle[
 .center[
- ## ![](images/Biopol_logo_small.jpg) & ![](images/nnvlogo.png) Örplastrannsóknir:
- ## .orange[Sýnatökur `r icon::octicons$beaker`] & .yellow[sanngreining `r icon::octicons$graph`]
- ## Greinaskrif og skýrslur `r icon::octicons$device_desktop`
+ ### ![](images/Biopol_logo_small-transparent.png) & ![](images/NNV-logo-transparent-kassi.png) 
+ ## Örplastrannsóknir:
+ ### Sýnatökur, sanngreining,
+ ### greinaskrif og skýrslur.
 
 ]]]]]
 
@@ -96,7 +97,7 @@ layout: true
 class: split-three with-thick-border
 
 .column.bg-red[.content.center.vmiddle[
-.yellow.font-pulp.font2[hVAÐAN KEMUR ÖRPLAST?]
+.yellow.font-pulp.font2[HVAR FINNST ÖRPLAST?]
 <br>
 .img-fill[![](images/animated_plot.gif)]
 .bottom_abs[.footer-note[.tiny[.green[Image Credit: ][CJ_Productions](https://www.reddit.com/r/cutouts/comments/3u9prd/travolta_cutout_technically_gif_format_optimized/)]]
@@ -114,7 +115,7 @@ class: split-three with-thick-border
 
 
 .column.bg-main2[.content.center.vmiddle[
-# Nokrir megin farvegir
+# Nokkrir megin farvegir
 
 .img-fill[![](images/ellidaar_saevarhofdi_02.jpg)]
 
@@ -156,13 +157,16 @@ class: split-40 bg-white with-border
 <img src="images/skolp_crop.jpg" width=100%>
     ]]
   .column.bg-white[.content[
- .font2.center[💦**Rennandi vatn er helsti farvegur örplasts**]
+ .font2.center[💧 🌊 💨 **Helstu farvegir**]
+
 
 .font_large[
-* Skólp
-* Ár og lækir
-* Rusl í fjörum
-* Vindur 🌬️
+ * Rennandi vatn
+ * Skólp
+ * Ár og lækir
+ 
+ 
+  * Vindur 🌬️
 ]
 
   ]
@@ -300,15 +304,16 @@ class: split-40
  
   .row.bg-main2[.content.left[
 * .font_medium[.blue[Fjöldi] ökutækja, eftir stærð og gerð (Ökutækjastofa)]
-* .font_medium[Estimates of .blue[wear] of tyres] .tiny[(Klein 2017)]
-* .font_medium[Estimates of .blue[emissions]] .tiny[(Vershoor 2016)]
+* .font_medium[Áætlað .blue[slit] hjólbarða] .tiny[(Klein 2017)]
+* .font_medium[Áætluð .blue[losun]] dekkjaslits .tiny[(Vershoor 2016)]
 
  ]]
  
  
    .row.bg-main2[.content.left.font_medium[
-* .blue[The Icelandic road (and coastal) administration] **IRCA** oversees the majority of the roadsystem 
-* All midlines painted yearly. 
+* .blue[Vegagerðin] málar miðlínur þjóðvega árlega
+* Sveitarfélög sjá um þéttbýli
+* Nýjir vegir eru ákveðið hlutfall (<15%)
  - Weather conditions and snow plowing
 * New roads account for approx. 13%
 * Polymer ingredient uncertain - .red[large margin of error]
@@ -331,7 +336,7 @@ class: split-40
 
 class: hide-row2-col1 hide-row3-col1 with-thick-border border-white
 
-# Car tyres
+# Hjólbarðar
 
 
 ```{r vegmerkingar1, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '51%',fig.show='hold'}

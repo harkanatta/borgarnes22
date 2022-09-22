@@ -1,2 +1,1 @@
-# Sources and Pathways of Microplastics to Icelandic Seas (**a talk**)
-This is the english version of a talk about the results of a report that was made for the environmental ministry of Iceland. Here is the [talk](https://harkanatta.github.io/mp-mirror/) and here is the [report](https://harkanatta.github.io/orplastskyrslaUAR/) (**in Icelandic**)
+# Örplast í náttúru Íslands, 10 mínútna fyrirlestur á ársfundi náttúrustofanna í Borgarnesi í september 2022. Þýðing á fyrirlestri frá Arctic Plastics 2021: [Sources and Pathways of Microplastics to Icelandic Seas.](https://harkanatta.github.io/mp-mirror/) sem var unnin upp úr skýrslunni um [uppsprettur og farvegi örplasts á Íslandireport](https://harkanatta.github.io/orplastskyrslaUAR/)
