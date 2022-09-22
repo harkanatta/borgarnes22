@@ -1,6 +1,6 @@
 ---
-title: "Microplastics in Iceland"
-subtitle: "Main Sources and Pathways to the Ocean"
+title: "Örplast í náttúru Íslands"
+subtitle: "Vöktun og greining"
 author:   |
   <br><br>
   <span class="noem">Valtýr Sigurðsson</span>
@@ -29,9 +29,9 @@ background-image: url("https://thumbs.gfycat.com/PersonalInfantileCuckoo-size_re
 background-size: 100%
 .content.vmiddle[
 .center[
-# .yellow[Main Sources and Pathways of Microplastics]
-## .yellow[in Icelandic Oceans]
-### .white[Made for the Environmental Ministry of Iceland] ![](images/skjldr.svg)
+# .yellow[Örplast]
+## .yellow[í náttúru Íslands]
+### .white[Unnið úr verkefni sem gert var fyrir umhverfisráðuneytið] ![](images/skjldr.svg)
 
 ## ![](images/Biopol_logo_small.jpg) ![](images/nnvlogo.png)
 
@@ -79,9 +79,9 @@ class: split-two with-thick-border border-cyan
 
 .content.vmiddle[
 .center[
- ## ![](images/Biopol_logo_small.jpg) and ![](images/nnvlogo.png) Microplastic research:
- ## .orange[Sampling `r icon::octicons$beaker`] and .yellow[Analyzing `r icon::octicons$graph`]
- ## Desktop studies and Reports `r icon::octicons$device_desktop`
+ ## ![](images/Biopol_logo_small.jpg) & ![](images/nnvlogo.png) Örplastrannsóknir:
+ ## .orange[Sýnatökur `r icon::octicons$beaker`] & .yellow[sanngreining `r icon::octicons$graph`]
+ ## Greinaskrif og skýrslur `r icon::octicons$device_desktop`
 
 ]]]]]
 
@@ -96,7 +96,7 @@ layout: true
 class: split-three with-thick-border
 
 .column.bg-red[.content.center.vmiddle[
-.yellow.font-pulp.font2[WHERE DO MICROPLASTICS COME FROM?]
+.yellow.font-pulp.font2[hVAÐAN KEMUR ÖRPLAST?]
 <br>
 .img-fill[![](images/animated_plot.gif)]
 .bottom_abs[.footer-note[.tiny[.green[Image Credit: ][CJ_Productions](https://www.reddit.com/r/cutouts/comments/3u9prd/travolta_cutout_technically_gif_format_optimized/)]]
@@ -105,7 +105,7 @@ class: split-three with-thick-border
 
 
 .column.bg-main1[.content.center.vmiddle[
-# Many Sources
+# Margar uppsprettur
 
 .img-fill[![](images/rusl_fjara_ospar_crop.jpg)]
 
@@ -114,7 +114,7 @@ class: split-three with-thick-border
 
 
 .column.bg-main2[.content.center.vmiddle[
-# Few Main Pathways
+# Nokrir megin farvegir
 
 .img-fill[![](images/ellidaar_saevarhofdi_02.jpg)]
 
@@ -156,17 +156,17 @@ class: split-40 bg-white with-border
 <img src="images/skolp_crop.jpg" width=100%>
     ]]
   .column.bg-white[.content[
- .font2.center[💦**Running water is the main pathway for MPs**]
+ .font2.center[💦**Rennandi vatn er helsti farvegur örplasts**]
 
 .font_large[
-* Sewage
-* Rivers and streams
-* Beach litter
-* Wind 🌬️
+* Skólp
+* Ár og lækir
+* Rusl í fjörum
+* Vindur 🌬️
 ]
 
   ]
-.tiny.font-dance.center[More on thet later]
+.tiny.font-dance.center[Meira um vindinn síðar]
   ]
   .column.bg-main4[.content[
   <br>
@@ -185,18 +185,18 @@ class: split-33
 .column.bg-main4[
 .content.vmiddle.right[
 .black[
-# Main Sources of MP's
-categories
+# Helstu uppsprettur örplasts
+flokkar
 ]
  .font-mono.font_medium[
- .red[Tirewear Particles]<br>
- .black[Road Paint]<br>
- .red[House Paint]<br>
- .black[Artificial Turf and Playgrounds]<br>
- .red[Laundry]<br>
- .black[Cosmetics]<br>
- .red[Fishing Gear]<br>
- .black[Plastic Waste on the Coastline]
+ .red[Bifreiðadekk]<br>
+ .black[Vegamálning]<br>
+ .red[Húsamálning]<br>
+ .black[Gervigras og leikvellir]<br>
+ .red[Þvottur]<br>
+ .black[Snyrtivörur]<br>
+ .red[Veiðarfæri]<br>
+ .black[Plast í fjörum]
 ]]]
 .column.content.center[
 .figb80[![](images/samansetning.png)]
@@ -212,12 +212,12 @@ class: split-33
 
 .column.bg-main2[.content.vmiddle[
 .center[
-# Estimates of the Main Sources of Microplastics
+# Helstu uppsprettur örplasts á Íslandi
 <br>
 <br>
-.font-mono[Lower estimate]
+.font-mono[Lægri vikmörk/mat]
 <br>
-.font-mono[Tonnes per year]
+.font-mono[Tonn á ári]
 ]]]
 
 .column[.content.vmiddle.center[
@@ -228,7 +228,7 @@ slit=c(371, 41, 26, 33.2, 60, 3, 0.2, 8.2, 0.34, 1, 0.002)
 losun= c(164, 5.7,  0, 15.2, 3.2, 0.3, 0, 8.2, 0.34, 0, 0.002)
 land=slit-losun
 library(networkD3)
-A <-  c("Car tires ","Road paint ","Airplane tires ","House paint ","Ship paint ","Artificial turf ","Playgrounds ","Laundry ","Cosmetics ","Hail shots ","Landfill leachates ","Land ","Ocean ")
+A <-  c("Hjólbarðar ","Vegamálning ","Hjólbarðar flugvéla ","Húsamálning ","Skipamálning ","Gervigras ","leikvellir ","Þvottur ","Snyrtivörur ","Högl ","Sigvatn úr landfyllingum ","Land ","Haf ")
 nodes <- as.data.frame(A)
 names(nodes) <- "name"
 #nodes$name <-  as.character(nodes$name)
@@ -271,7 +271,7 @@ background-size: cover
 
 .column.slide-in-left[
 .sliderbox.shade_main.center[
-.font5.font-dance[Traffic]]]
+.font5.font-dance[Umferð]]]
 .column[
 ]
 
@@ -291,15 +291,15 @@ class: split-40
   .split-three[
  
  .row.bg-main1[.content.left.font_medium[
-* .blue[The soles] of tires are made of a synthetic .blue[rubber blend] which is released in traffic.
-* .blue[Tirewear and road particles] along with .blue[road paint] are well studied emission sources and can be applied to Icelandic conditions.
-* These particles range mostly from .blue[10-100 µm] (bigger than aerosol)
+* .blue[Slitlag hjólbarða], sem er gert úr .blue[blöndu af gúmmíi] eyðist smám saman við akstur vegna núnings við vegi.
+* .blue[Dekkjaagnirnar] blandast öðrum ögnum sem eru í .blue[malbikinu og vegrykinu] og eru tekin sem örplast, óháð innihaldi.
+* Þessar agnir eru á stærðarbilinu .blue[10 til 100 µm] (stærra en svifryk)
  ]
- .bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Kreider 2010](https://www.sciencedirect.com/science/article/pii/S0048969709009590)]]]
+ .bottom_abs[.footer-note[.tiny[.green[Mynd: ][Kreider 2010](https://www.sciencedirect.com/science/article/pii/S0048969709009590)]]]
  ]
  
   .row.bg-main2[.content.left[
-* .font_medium[.blue[Numbers] of vehicles, types and weight (Icelandic transport authority)]
+* .font_medium[.blue[Fjöldi] ökutækja, eftir stærð og gerð (Ökutækjastofa)]
 * .font_medium[Estimates of .blue[wear] of tyres] .tiny[(Klein 2017)]
 * .font_medium[Estimates of .blue[emissions]] .tiny[(Vershoor 2016)]
 
