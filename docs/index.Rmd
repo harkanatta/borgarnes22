@@ -29,10 +29,10 @@ background-image: url("https://thumbs.gfycat.com/PersonalInfantileCuckoo-size_re
 background-size: 100%
 .content.vmiddle[
 .center[
-# .yellow[Örplast]
-## .yellow[í náttúru Íslands]
+# .white[Örplast]
+## .white[í náttúru Íslands]
 
-## ![](images/NNV-logo.png)
+## ![](images/NNV-logo-transparent.png)
 
 
 
@@ -49,15 +49,18 @@ This is a talk about the main sources of MP's in Iceland and their pathways to t
 ---
 
 layout: false
-class: split-two with-thick-border border-cyan
+class: split-two 
 
 .column.bg-main1[
 .split-two[
 
-.row.bg-main1[.content.vmiddle[
+.row.bg-white[.content.vmiddle[
 .center[
 .nopadding[
-.img-fill[![](https://raw.githubusercontent.com/harkanatta/innragrunn/master/docs/images/biopol_synataka.jpg)]
+ ### ![](images/Biopol_logo_small-transparent.png) & ![](images/NNV-logo-transparent-kassi.png) 
+ ## Örplastrannsóknir:
+ ### Sýnatökur, sanngreining,
+ ### greinaskrif og skýrslur.
 ]]]]
 
 .row.bg-main1[
@@ -75,15 +78,34 @@ class: split-two with-thick-border border-cyan
 .nopadding[
 .img-fill[![](images/dorimugg.jpg)]
 ]]]]
-.row.bg-main1[
 
-.content.vmiddle[
+.row.bg-main1[.content.vmiddle[
 .center[
- ### ![](images/Biopol_logo_small-transparent.png) & ![](images/NNV-logo-transparent-kassi.png) 
- ## Örplastrannsóknir:
- ### Sýnatökur, sanngreining,
- ### greinaskrif og skýrslur.
+.nopadding[
+.img-fill[![](images/SpectraPlot.png)]
+]]]]
 
+```{r plot, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE, out.width='100%'}
+library(tidyverse)
+presin <- read.csv("skjol/Polyethylene_resin_Cabernard_et_al_2018.csv")
+ogn <- read.csv("skjol/Ogn_nr_13.csv")
+ogn$Sýni <- 'Ögn nr. 13'
+presin$Sýni <- 'Pólýetýlen resín \n(Cabernard et al. 2018)'
+
+litir <- c('#f60000','#09428f')
+
+p <- rbind(presin[,c(2,3,6)],ogn[ogn$wavenumber<2000,]) %>% 
+  ggplot(aes(x=wavenumber, y=intensity, colour = Sýni)) +
+  geom_line(size=1) +
+  labs(x = bquote('bylgjutala'~(cm^-1)), y = "styrkleiki")+
+  scale_color_manual(values = litir)+
+  theme_bw()+
+  theme(strip.text.x = element_blank(),
+      strip.background = element_rect(colour="white", fill="white"),
+      legend.position=c(.15,.75)
+      )
+
+```
 ]]]]]
 
 
@@ -94,10 +116,10 @@ A quick backstory on how this project came to me or us. Well, Biopol had done en
 ---
 
 layout: true
-class: split-three with-thick-border
+class: split-30 with-no-border
 
 .column.bg-red[.content.center.vmiddle[
-.yellow.font-pulp.font2[HVAR FINNST ÖRPLAST?]
+.yellow.font-perm.font2[HVAÐAN KEMUR ÖRPLAST Á íSLANDI?]
 <br>
 .img-fill[![](images/animated_plot.gif)]
 .bottom_abs[.footer-note[.tiny[.green[Image Credit: ][CJ_Productions](https://www.reddit.com/r/cutouts/comments/3u9prd/travolta_cutout_technically_gif_format_optimized/)]]
@@ -105,23 +127,13 @@ class: split-three with-thick-border
 ]]
 
 
-.column.bg-main1[.content.center.vmiddle[
-# Margar uppsprettur
+.column.bg-white[.content.center.vmiddle[
 
-.img-fill[![](images/rusl_fjara_ospar_crop.jpg)]
+.img-fill[![](images/samsetn-landscape.jpg)]
 
 
 ]]
 
-
-.column.bg-main2[.content.center.vmiddle[
-# Nokkrir megin farvegir
-
-.img-fill[![](images/ellidaar_saevarhofdi_02.jpg)]
-
-.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Rvk](https://reykjavik.is/frettir/abyrgd-synd-vid-bilathvott-og-medferd-efna)]]
-]
-]]
 
 
 ???
@@ -135,80 +147,10 @@ class: show-100
 
 
 ---
+count: false
 class: show-110
 
 
----
-count: false
-
-
----
-layout:false
-class: split-40 bg-white with-border
-
-.row[.center[
-<img src="images/ALTA.png" width=87%>
-].top_abs[.tiny[[ALTA](https://www.alta.is/)]]]
-.row[
-  .split-three.with-border[
-  .column.bg-main1[.content[
-  <br>
-  <br>
-<img src="images/skolp_crop.jpg" width=100%>
-    ]]
-  .column.bg-white[.content[
- .font2.center[💧 🌊 💨 **Helstu farvegir**]
-
-
-.font_large[
- * Rennandi vatn
- * Skólp
- * Ár og lækir
- 
- 
-  * Vindur 🌬️
-]
-
-  ]
-.tiny.font-dance.center[Meira um vindinn síðar]
-  ]
-  .column.bg-main4[.content[
-  <br>
-  <br>
-  <img src="images/rullur_crop.jpg" width=100%>
-  ]]
-]]
-
-???
-Running water is the most important pathway for mp to the ocean, mostly through sewage but also at some level, rivers and streams. Beach litter is a grinding machine for larger plastic objects into mp. Wind also plays a role but many questions need answering especially when it come to very small, even nano-sized particles.
----
-
-layout: false
-class: split-33
-
-.column.bg-main4[
-.content.vmiddle.right[
-.black[
-# Helstu uppsprettur örplasts
-flokkar
-]
- .font-mono.font_medium[
- .red[Bifreiðadekk]<br>
- .black[Vegamálning]<br>
- .red[Húsamálning]<br>
- .black[Gervigras og leikvellir]<br>
- .red[Þvottur]<br>
- .black[Snyrtivörur]<br>
- .red[Veiðarfæri]<br>
- .black[Plast í fjörum]
-]]]
-.column.content.center[
-.figb80[![](images/samansetning.png)]
-]
-
-???
-
-So lets dive into the sources. The main MP's sources in Iceland are the usual suspects
 ---
 
 layout: false
@@ -224,9 +166,9 @@ class: split-33
 .font-mono[Tonn á ári]
 ]]]
 
-.column[.content.vmiddle.center[
+.column.hide-slide-number[.content.vmiddle.center[
 
-```{r SankBig, echo=FALSE, fig.cap="Microplastic", message=FALSE, warning=FALSE, out.width='100%'}
+```{r SankBig, echo=FALSE, message=FALSE, warning=FALSE, out.height='55%', out.width='90%'}
 #losun <- (l+h)/2 #Meðaltal lægra og hærra mats á losun.
 slit=c(371, 41, 26, 33.2, 60, 3, 0.2, 8.2, 0.34, 1, 0.002)
 losun= c(164, 5.7,  0, 15.2, 3.2, 0.3, 0, 8.2, 0.34, 0, 0.002)
@@ -266,220 +208,6 @@ We divide them with respect to their fate or where they end up eventually, if th
 You can see, for example, how the shedding of MP particles from laundry goes almost exclusively to the ocean via sewage while the majority of the much greater source, car tires, end up mostly in soil on land.
 Confidence intervals are not presented in this visualization and these are the lower estimates of a large error margin.
 
----
-
-layout:false
-class: split-30 hide-slide-number
-background-image: url("images/blandabru.jpg")
-background-size: cover
-
-.column.slide-in-left[
-.sliderbox.shade_main.center[
-.font5.font-dance[Umferð]]]
-.column[
-]
-
-.bottom_abs[.footer-note[.tiny[.green[Image Credit: ][Robbi Dan](https://www.flickr.com/photos/robbidan/)]]
-]
-
-???
-Traffic
-This is the main road that circles the country, going over the river Blanda in the northern part of the country. 60 to 85% of mp sources come from traffic.
-
----
-
-layout: true
-class: split-40
-
-.column.bg-main3[.content[
-  .split-three[
- 
- .row.bg-main1[.content.left.font_medium[
-* .blue[Slitlag hjólbarða], sem er gert úr .blue[blöndu af gúmmíi] eyðist smám saman við akstur vegna núnings við vegi.
-* .blue[Dekkjaagnirnar] blandast öðrum ögnum sem eru í .blue[malbikinu og vegrykinu] og eru tekin sem örplast, óháð innihaldi.
-* Þessar agnir eru á stærðarbilinu .blue[10 til 100 µm] (stærra en svifryk)
- ]
- .bottom_abs[.footer-note[.tiny[.green[Mynd: ][Kreider 2010](https://www.sciencedirect.com/science/article/pii/S0048969709009590)]]]
- ]
- 
-  .row.bg-main2[.content.left[
-* .font_medium[.blue[Fjöldi] ökutækja, eftir stærð og gerð (Ökutækjastofa)]
-* .font_medium[Áætlað .blue[slit] hjólbarða] .tiny[(Klein 2017)]
-* .font_medium[Áætluð .blue[losun]] dekkjaslits .tiny[(Vershoor 2016)]
-
- ]]
- 
- 
-   .row.bg-main2[.content.left.font_medium[
-* .blue[Vegagerðin] málar miðlínur þjóðvega árlega
-* Sveitarfélög sjá um þéttbýli
-* Nýjir vegir eru ákveðið hlutfall (<15%)
- - Weather conditions and snow plowing
-* New roads account for approx. 13%
-* Polymer ingredient uncertain - .red[large margin of error]
-
- ]]
- 
- 
-
- 
-]]]
-
-
-.column.bg-white[.content.center.vmiddle[
-{{content}}
-]]
-
-
-
----
-
-class: hide-row2-col1 hide-row3-col1 with-thick-border border-white
-
-# Hjólbarðar
-
-
-```{r vegmerkingar1, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE,out.width = '51%',fig.show='hold'}
- knitr::include_graphics(c("images/tyre.jpg","images/Kreider_et_al_2010.png"))
-```
-
-
-
-???
-
-Lets start with the biggest source, car tyres. The asphalt scrapes the rubber of the tyres like sandpaper, mixing in with them and forming these little turd-like particles that you see on the image. Theese particle are to big for aerosol so they're mostly carried away with road run-off, either into the soil, to the sewer or some waterway or stream.
-
----
-
-class: fade-row1-col1 hide-row3-col1 with-thick-border border-white
-
-```{r SankSmall, echo=FALSE, fig.cap="Microplastic", message=FALSE, warning=FALSE, out.width='100%'}
-slit=c(244,34,22,79) 
-losun=c(106,15,9,34)
-land=slit-losun
-library(networkD3)
-A <- c("Small Vehicles ","Delivery Vans ","Buses ","Lorrys ","Land ","Ocean ")
-nodes <- as.data.frame(A)
-names(nodes) <- "name"
-#nodes$name <-  as.character(nodes$name)
-links <- data.frame(source=rep(0:3,2),target=rep(4:5, each=4),value=c(land,losun))
-Sank <- list(nodes, links)
-names(Sank) <- c('nodes', 'links')
-sn <- sankeyNetwork(
-  Links = Sank$links,
-  Nodes = Sank$nodes,
-  Source = "source",
-  Target = "target",
-  Value = "value",
-  NodeID = "name",
-  units = "tonn",
-  colourScale = JS("d3.scaleOrdinal(d3.schemeCategory20);"),
-  fontSize = 28,
-  nodeWidth = 30, width = "500px", height = "400px", fontFamily = "Courier"
-)
-
-library(widgetframe)
-rammi <- frameWidget(sn)
-rammi
-```
-
-```{r akstur, echo=FALSE, cache = TRUE}
-library(RColorBrewer)
-options(OutDec = ",")
-# Heildarþyngd ökutækis: Þyngd ökutækis eða vagnlestar með ökumanni, farþegum, farmi og viðfestum vinnutækjum.
-
-
-bifreidar <- matrix(c(227409,23159,2410,8078,2049,2661,9746,17181,12601,14251.6,33693.6,17832,85,102,267,546,132,159,415,850),5,4,byrow = T)
-
-slit_lagt <- bifreidar[1,]*bifreidar[3,]*bifreidar[4,]/1000000000 #Fjöldi*meðalakstur*(slit (mg/ári) lægri talan)
-losun_lagt <- c()
-  for (i in 1:length(slit_lagt)) {
-  losun_lagt[i] <- (2/3)*slit_lagt[i]*0.6+(1/3)*slit_lagt[i]*0 #Verschoor2016
-}
-slit_lagt <- round(slit_lagt,0)
-losun_lagt <- round(losun_lagt,0)
-
-slit_hatt <- bifreidar[1,]*bifreidar[3,]*bifreidar[5,]/1000000000 #Fjöldi*meðalakstur*(slit (mg/ári) hærri talan)
-losun_hatt <- c()
-for (i in 1:length(slit_hatt)) {
-  losun_hatt[i] <- (2/3)*slit_hatt[i]*0.6+(1/3)*slit_hatt[i]*0 #Verschoor2016
-}
-slit_hatt <- round(slit_hatt,0)
-losun_hatt <- round(losun_hatt,0)
-
-slit_ari <- ifelse(slit_hatt>slit_lagt,paste(slit_lagt,slit_hatt,sep = "-"),paste(slit_hatt,slit_lagt,sep = "-"))
-losun_ari <- ifelse(losun_hatt>losun_lagt,paste(losun_lagt,losun_hatt,sep = "-"),paste(losun_hatt,losun_lagt,sep = "-"))
-
-bifreidar[2,] <- round(bifreidar[2,]/1000,2)
-bifreidar[3,] <- round(bifreidar[3,]/1000,2)
-bifreidar <- rbind(bifreidar[1:3,],paste(bifreidar[4,],bifreidar[5,],sep="-"),slit_ari,losun_ari)
-
-colnames(bifreidar) <- c("Small Vehicles","Delivery Vans","Buses","Lorrys")
-rownames(bifreidar)<- c("Number","Mean weight (t)","Average usage (K km/year)","Wear & tear (mg/km)", "Wear & tear (t/year)", "Release to ocean (t/year)")
-
-
-#bifreidar <- rbind(icon[c(1,2,3,4)],bifreidar)
-bifreidar <- format(bifreidar,  decimal.mark=",", big.mark=".", scientific=FALSE)
-
-if (knitr::is_html_output()) {
-   knitr::kable(bifreidar, booktabs=T, caption = ".")
-
-} else {
-  rownames(bifreidar)<- c("Fjöldi","Meðalþyngd (t)","Meðalakstur (þús. km/ár)","Slit (mg/km)", "Slit (t/ár)", "Losun í hafið (t/ár)")
- knitr::kable(bifreidar, caption = "Áætluð árleg losun örplasts í hafið vegna slits á hjólbörðum bifreiða. Fjöldi bíla af mismunandi gerðum í umferð á Íslandi þann 14. ágúst 2018 og meðalakstur skv. Umferðastofu. Með meðalþyngd er átt við heildarþyngd skv. reglugerð. Byggt á mati Klein (2017) og Verschoor (2016)",format = 'latex', booktabs=T)
-   }
-options(OutDec = ".")
-
-```
-
-
-???
-
-To estimate the total source of microplastics from car tyres, data from the Icelandic transport authority was used with estimates of wear of tyres for different size classes of vehicles. To evaluate how much of it could possibly end up in the ocean estimates of emissions were used.
-
----
-
-class: fade-row1-col1 fade-row2-col1 with-thick-border border-white
-
-
-```{r vegmerkingSank, eval=FALSE, include=FALSE, echo=FALSE, fig.cap="Road paint", message=FALSE, warning=FALSE, out.width='100%'}
-nodes <- c('Larger mun. ','Smaller mun. ','IRCA ','Thermopl. ','Paint ','Source low est. ','Source high est. ','Ocean','Ocean','Land','Land')
-nodes <- as.data.frame(nodes)
-names(nodes) <- "name"
-#nodes$name <-  as.character(nodes$name)
-links <- data.frame(source=c(0,1,2,2,3,4,3,4,5,6,5,6),target=c(3,4,3,4,5,5,6,6,7,8,9,10),value=c(110,15,543,218,6,35,163,93,5.7,42.6,35,213))
-rass <- list(nodes,links)
-names(rass) <- c('nodes','links')
-sn <- sankeyNetwork(Links = rass$links,
-                    Nodes = rass$nodes,
-                    Source = "source",
-                    Target = "target",
-                    Value = "value",
-                    NodeID = "name",
-                    units = "Tonn",
-                    colourScale = JS("d3.scaleOrdinal(d3.schemeCategory20);"),
-                    fontSize = 28,
-                    nodeWidth = 30, 
-                    width = "500px", 
-                    height = "400px", 
-                    fontFamily = "Courier")
-
-library(widgetframe)
-rammi <- frameWidget(sn)
-rammi
-  
-```
-
-
-```{r vegagerd, echo=FALSE, message=FALSE, warning=FALSE, fig.show='hold',out.width = '70%', dev.args=list(bg="transparent") }
-
-img <- knitr::include_graphics("images/roadmarking.jpg")
-img
-```
-
-???
-
-Another large source of MP's in the transportation category is road paint. Road paint (both spray paint and thermoplastics) has plastic polymers as binding material in it. The road administration supplied available statistics based on their inventory of imported road paint. A few municipalities supplied us with documents so we could come up with an approximation of road paint in the country. There are different materials in use and polymer content is not always available.
 
 ---
 
