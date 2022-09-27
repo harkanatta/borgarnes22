@@ -57,9 +57,10 @@ class: split-two
 .row.bg-white[.content.vmiddle[
 .center[
 .nopadding[
- ### ![](images/Biopol_logo_small-transparent.png) & ![](images/NNV-logo-transparent-kassi.png) 
+![](images/NNV-logo-transparent-kassi.png) 
+ ### NNV í samstarfi við BioPol
  ## Örplastrannsóknir:
- ### Sýnatökur, sanngreining,
+ ### Sýnatökur, .blue[sanngreining],
  ### greinaskrif og skýrslur.
 ]]]]
 
@@ -120,6 +121,7 @@ class: split-30 with-no-border
 
 .column.bg-red[.content.center.vmiddle[
 .yellow.font-perm.font2[HVAÐAN KEMUR ÖRPLAST Á íSLANDI?]
+<br>
 <br>
 .img-fill[![](images/animated_plot.gif)]
 .bottom_abs[.footer-note[.tiny[.green[Image Credit: ][CJ_Productions](https://www.reddit.com/r/cutouts/comments/3u9prd/travolta_cutout_technically_gif_format_optimized/)]]
@@ -226,9 +228,9 @@ class: split-40 bg-white with-border
     ]]
   .column.bg-white[.content.font2[
 
- A simple crude devition:
-* On rural roads: .blue[90%] of road runoff goes to the .blue[soil] and .red[10%] to .red[surface water]
-* In urban areas:.blue[40%] to .blue[soil] and .red[60%] to the .red[sewers].
+ Gróflega áætlað:
+* **Í dreifbýli**: .blue[90%] dekkjaagna fer í .blue[jarðveg] en .red[10%] berst með .red[ofanvatni]
+* **Í þéttbýli**:.blue[40%] fer í .blue[jarðveg] en .red[60%] berst í .red[fráveitukerfi].
   ]
   .bottom_abs.left[.tiny[(Klein 2017)]]
   ]
@@ -247,18 +249,15 @@ There haven't been many extansive studys on pathways of MPs, mainly because of d
 layout:false
 class: bg-white
 
-.center[
-<img src="images/trafficDensity_BGB.png" width=70%>
-]
+background-image: url("images/trafficDensity_BGB.png")
+background-size: cover
 
 ???
 Is there any thing special about the pathways in Iceland? 
 ---
 layout:false
-class: bg-main1
-.center[
-<img src="images/trafficDensity_BG.png" width=70%>
-]
+background-image: url("images/trafficDensity_BG.png")
+background-size: cover
 
 ???
 We are in a very sparsely populated country (two thirds of the population live near Reykjavík) and we do not treat our sewage with the aim of reducing mp's. 
@@ -286,8 +285,8 @@ Types of sewage treatment
   ]]
 ]]
 .row[
-# Most of the sewage is concentrated near Reykjavík. 
-# .blue[Microplastics] are not treated as a concern *yet*
+# Langmest skólp rennur í sjóinn út frá Reykjavík
+# .blue[Örplast] er ekki .blue[ennþá] síað út 
 ]
 
 ???
@@ -299,16 +298,13 @@ Here the sewage pipes of Rvk can be seen. Sewage is transported fram from shore 
 
 
 layout:false
-class: split-20 hide-slide-number
-background-image: url("images/skipamalning.jpg")
+class: split-50 hide-slide-number
+background-image: url("images/straumar.png")
 background-size: cover
 
-.column.slide-in-left[
-.sliderbox.shade_main.center[
-.font-dance[.font5[Paint] .font2[and stuff]]]]
-.column[
 
-]
+.font-dance[.font5[Vindar og sjávarstraumar]]
+
 
 ???
 That's Eiríkur
